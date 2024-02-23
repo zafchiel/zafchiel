@@ -21,7 +21,6 @@
 
 <svelte:document on:scroll={handleScroll} />
 
-<!-- <div class="push_down" /> -->
 <div class="wrapper">
   <Side />
   <Main />
