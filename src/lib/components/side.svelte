@@ -1,19 +1,23 @@
 <aside>
-  <h3>Menu</h3>
-  <nav>
-    <a href="#intro"> Intro </a>
-    <a href="#about"> About </a>
-    <a href="#tech"> Tech </a>
-    <a href="#projects">Projects</a>
-  </nav>
+  <div class="holder">
+    <h3>Menu</h3>
+    <nav>
+      <a href="#intro"> Intro </a>
+      <a href="#about"> About </a>
+      <a href="#tech"> Tech </a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </div>
 </aside>
 
 <style>
   aside {
-    position: sticky;
-    top: 20px;
+    position: block;
     width: 200px;
-    height: calc(100vh - 40px);
+  }
+  .holder {
+    position: sticky;
+    top: 200px;
   }
   nav {
     display: flex;
