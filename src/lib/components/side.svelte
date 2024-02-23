@@ -42,19 +42,22 @@
   }
 
   nav.expanded a {
-    min-width: 260px;
+    min-width: 250px;
+    background-color: transparent;
+    border: 1px solid seashell;
+    color: inherit;
   }
 
   a {
     text-transform: capitalize;
     text-decoration: none;
-    color: inherit;
+    color: black;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    background-color: slategray;
+    background-color: seashell;
     min-width: 0;
-
     transition: 0.3s ease-in-out;
+    font-weight: 400;
   }
 
   @media (max-width: 1000px) {

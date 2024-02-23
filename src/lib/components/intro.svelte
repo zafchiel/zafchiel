@@ -1,13 +1,13 @@
 <section id="intro">
   <h1>
-    @Zafchiel
+    Zafchiel
     <br />
-    Fullstack Enthusiast
+    EOEOEOEOEOEO
   </h1>
 </section>
 
 <style>
   section {
-    margin: 4rem 0 10rem 0;
+    margin: 6rem 0 10rem 0;
   }
 </style>
