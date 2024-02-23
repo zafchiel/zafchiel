@@ -19,9 +19,8 @@
 
 <style>
   aside {
-    position: block;
+    /* position: block; */
     width: 300px;
-    padding: 1rem;
   }
 
   .holder {
@@ -32,6 +31,7 @@
   h3 {
     text-align: center;
     margin-bottom: 1rem;
+    text-transform: uppercase;
     transition: opacity 0.2s ease-in-out;
   }
 

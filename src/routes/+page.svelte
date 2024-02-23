@@ -21,19 +21,36 @@
 
 <svelte:document on:scroll={handleScroll} />
 
-<div class="push_down" />
+<!-- <div class="push_down" /> -->
 <div class="wrapper">
-  <Side />
+  <div class="menu">
+    <Side />
+  </div>
   <Main />
 </div>
 
 <style>
-  .push_down {
+  /* .push_down {
     height: 250px;
-  }
+  } */
 
   .wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content minmax(500px, 640px);
     gap: 2rem;
+    /* margin: 0 auto; */
+    margin-top: 280px;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+    .menu {
+      display: none;
+    }
   }
 </style>
