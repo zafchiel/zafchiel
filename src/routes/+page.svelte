@@ -30,7 +30,7 @@
 <style>
   .wrapper {
     display: grid;
-    grid-template-columns: 250px minmax(500px, 640px);
+    grid-template-columns: 250px minmax(650px, 760px);
     gap: 2rem;
     margin: 0 auto;
     margin-top: 280px;

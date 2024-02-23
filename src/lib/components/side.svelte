@@ -52,12 +52,13 @@
     text-transform: capitalize;
     text-decoration: none;
     color: black;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 4px;
     background-color: seashell;
     min-width: 0;
     transition: 0.3s ease-in-out;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: (var(--fs-md));
   }
 
   @media (max-width: 1000px) {
