@@ -29,7 +29,7 @@
 
 <style>
   .push_down {
-    height: 300px;
+    height: 250px;
   }
 
   .wrapper {

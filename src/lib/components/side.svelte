@@ -1,5 +1,4 @@
 <script>
-  import MenuLink from "./menu-link.svelte";
   import { getExpanded } from "$lib/stores/expaded-store";
 
   const expanded = getExpanded();
@@ -9,10 +8,11 @@
   <div class="holder">
     <h3 class:hidden={!$expanded}>Menu</h3>
     <nav>
-      <MenuLink direction="intro" />
-      <MenuLink direction="about" />
-      <MenuLink direction="tech" />
-      <MenuLink direction="projects" />
+      <a href="#intro">Intro</a>
+      <a href="#about">About</a>
+      <a href="#tech">Tech</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </aside>
@@ -38,9 +38,19 @@
   h3 {
     text-align: center;
     margin-bottom: 1rem;
+    transition: opacity 0.2s ease-in-out;
   }
 
   .hidden {
     opacity: 0;
+  }
+
+  a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: slategray;
   }
 </style>
