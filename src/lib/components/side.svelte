@@ -7,7 +7,7 @@
 <aside>
   <div class="holder">
     <h3 class:hidden={!$expanded}>Menu</h3>
-    <nav>
+    <nav class:expanded={$expanded}>
       <a href="#intro">Intro</a>
       <a href="#about">About</a>
       <a href="#tech">Tech</a>
@@ -21,18 +21,12 @@
   aside {
     position: block;
     width: 300px;
+    padding: 1rem;
   }
 
   .holder {
     position: sticky;
-    top: 200px;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: self-end;
-    gap: 1rem;
+    top: 150px;
   }
 
   h3 {
@@ -45,6 +39,17 @@
     opacity: 0;
   }
 
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    gap: 1rem;
+  }
+
+  nav.expanded a {
+    min-width: 260px;
+  }
+
   a {
     text-transform: capitalize;
     text-decoration: none;
@@ -52,5 +57,8 @@
     padding: 0.5rem 1rem;
     border-radius: 4px;
     background-color: slategray;
+    min-width: 0;
+
+    transition: 0.3s ease-in-out;
   }
 </style>
