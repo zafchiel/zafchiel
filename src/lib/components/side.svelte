@@ -18,11 +18,6 @@
 </aside>
 
 <style>
-  aside {
-    /* position: block; */
-    width: 300px;
-  }
-
   .holder {
     position: sticky;
     top: 150px;
@@ -60,5 +55,11 @@
     min-width: 0;
 
     transition: 0.3s ease-in-out;
+  }
+
+  @media (max-width: 1000px) {
+    aside {
+      display: none;
+    }
   }
 </style>

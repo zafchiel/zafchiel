@@ -23,22 +23,16 @@
 
 <!-- <div class="push_down" /> -->
 <div class="wrapper">
-  <div class="menu">
-    <Side />
-  </div>
+  <Side />
   <Main />
 </div>
 
 <style>
-  /* .push_down {
-    height: 250px;
-  } */
-
   .wrapper {
     display: grid;
-    grid-template-columns: max-content minmax(500px, 640px);
+    grid-template-columns: 300px minmax(500px, 640px);
     gap: 2rem;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     margin-top: 280px;
     padding: 1.5rem;
   }
@@ -47,10 +41,6 @@
     .wrapper {
       grid-template-columns: 1fr;
       padding: 1rem;
-    }
-
-    .menu {
-      display: none;
     }
   }
 </style>
