@@ -15,9 +15,14 @@
       <a href="#contact">Contact</a>
     </nav>
   </div>
+  <div class="glow" />
 </aside>
 
 <style>
+  aside {
+    position: relative;
+  }
+
   .holder {
     position: sticky;
     top: 150px;
@@ -59,6 +64,21 @@
     transition: 0.3s ease-in-out;
     font-weight: 600;
     font-size: (var(--fs-md));
+  }
+
+  .glow {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 10%,
+      rgba(255, 255, 255, 0) 95%
+    );
+    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
   }
 
   @media (max-width: 1000px) {
