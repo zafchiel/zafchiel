@@ -1,6 +1,6 @@
 <section id="intro">
   <h1>
-    Zafchiel,
+    @Zafchiel
     <br />
     Fullstack Enthusiast
   </h1>
