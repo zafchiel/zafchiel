@@ -10,12 +10,15 @@
     <h3 class:hidden={!$expanded}>Menu</h3>
     <nav class:expanded={$expanded}>
       <a href="#intro">Intro</a>
-      <a href="#about">About</a>
-      <a href="#tech">Tech</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" class:active={$activeLinkStore === "about"}>About</a>
+      <a href="#tech" class:active={$activeLinkStore === "tech"}>Tech</a>
+      <a href="#projects" class:active={$activeLinkStore === "projects"}
+        >Projects</a
+      >
+      <a href="#contact" class:active={$activeLinkStore === "contact"}
+        >Contact</a
+      >
     </nav>
-    {$activeLinkStore}
   </div>
   <div class="glow" />
 </aside>
@@ -53,6 +56,11 @@
     background-color: transparent;
     border: 1px solid seashell;
     color: inherit;
+  }
+
+  nav.expanded a.active {
+    background-color: seashell;
+    color: #151515;
   }
 
   a {
