@@ -1,4 +1,5 @@
 <script>
+  import { activeLinkStore } from "$lib/stores/active-link-store";
   import { getExpanded } from "$lib/stores/expaded-store";
 
   const expanded = getExpanded();
@@ -14,6 +15,7 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+    {$activeLinkStore}
   </div>
   <div class="glow" />
 </aside>

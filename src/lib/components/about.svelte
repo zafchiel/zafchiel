@@ -1,5 +1,10 @@
-<section id="about">
+<script lang="ts">
+  import { intersectionObserverAction } from "$lib/utils/intersection-observer";
+</script>
+
+<section id="about" use:intersectionObserverAction>
   <h2>About</h2>
+  <div></div>
   <p>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, unde!
     Ad illo similique perferendis atque placeat. Voluptatum fuga quam temporibus
@@ -10,3 +15,13 @@
     ipsam.
   </p>
 </section>
+
+<style>
+  div {
+    height: 300px;
+    background-color: sienna;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+</style>
