@@ -66,6 +66,15 @@
     font-size: (var(--fs-md));
   }
 
+  nav:has(a:hover) a:not(:hover) {
+    filter: blur(2px);
+    scale: 0.97;
+  }
+  nav:has(a:hover) a:hover {
+    filter: none;
+    scale: 1.03;
+  }
+
   .glow {
     position: absolute;
     top: 0;
@@ -77,8 +86,6 @@
       rgba(255, 255, 255, 0.5) 10%,
       rgba(255, 255, 255, 0) 95%
     );
-    z-index: -1;
-    transition: opacity 0.2s ease-in-out;
   }
 
   @media (max-width: 1000px) {
