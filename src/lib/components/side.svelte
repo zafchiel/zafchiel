@@ -26,7 +26,7 @@
       >
     </nav>
   </div>
-  <div class="glow" />
+  <!-- <div class="glow" /> -->
 </aside>
 
 <style>

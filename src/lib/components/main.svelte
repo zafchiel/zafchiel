@@ -1,4 +1,5 @@
 <script>
+  import Plot from "$lib/assets/plot.svelte";
   import { getExpanded } from "$lib/stores/expaded-store";
   import About from "./about.svelte";
   import Contact from "./contact.svelte";
@@ -10,6 +11,7 @@
 </script>
 
 <main>
+  <Plot />
   <Home />
   <div class:hidden={!$expanded}>
     <About />
@@ -22,6 +24,7 @@
 <style>
   main {
     width: 100%;
+    position: relative;
   }
 
   div {
