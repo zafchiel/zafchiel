@@ -18,8 +18,8 @@
 </script>
 
 <svg
-  width="20"
-  height="48"
+  width="50"
+  height="38"
   viewBox="0 0 267 422"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -28,8 +28,9 @@
     <path
       d="m158.62,211.01l-158.62,-211l104.47,0l158.62,211l-158.62,211l-104.47,0l158.62,-211z"
       fill="none"
-      stroke="#fff"
-      stroke-width="3"
+      stroke="var(--color-primary)"
+      stroke-width="5"
+      transform="rotate(90 133.5 211)"
       use:paintAction
     />
   </g>

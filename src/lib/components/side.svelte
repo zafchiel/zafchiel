@@ -74,7 +74,7 @@
     text-decoration: none;
     color: black;
     padding: 0.5rem 1.5rem;
-    border-radius: 4px;
+    border-radius: var(--border-radius-sm);
     background-color: seashell;
     min-width: 0;
     transition: 0.3s ease-in-out;
@@ -98,9 +98,9 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(
-      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0) 0%,
       rgba(255, 255, 255, 0.5) 10%,
-      rgba(255, 255, 255, 0) 95%
+      rgba(0, 0, 0, 0) 95%
     );
   }
 

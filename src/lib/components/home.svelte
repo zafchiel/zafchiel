@@ -4,10 +4,11 @@
 
 <section id="home">
   <h1>Zafchiel, a web development enthusiast</h1>
-  <div>
+  <a href="#about"
+    >learn more
+
     <Arrow />
-    <a href="#about">learn more</a>
-  </div>
+  </a>
 </section>
 
 <style>
@@ -18,12 +19,10 @@
   a {
     font-size: var(--fs-sm);
     text-decoration: none;
-    color: #f8f8f866;
-  }
-
-  h1 + div {
+    color: var(--color-primary);
+    opacity: 0.7;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.2rem;
   }
 </style>
