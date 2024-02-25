@@ -104,7 +104,7 @@
     );
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     aside {
       display: none;
     }

@@ -36,7 +36,7 @@
     width: fit-content;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     .wrapper {
       grid-template-columns: 1fr;
       padding: 1rem;
