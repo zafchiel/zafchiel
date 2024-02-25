@@ -10,7 +10,7 @@
 <style>
   div {
     height: 300px;
-    background-color: sienna;
+    background-color: #222;
     border-radius: 4px;
     margin-top: 1rem;
     margin-bottom: 2rem;

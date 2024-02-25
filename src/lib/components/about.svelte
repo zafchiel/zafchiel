@@ -7,8 +7,9 @@
   <div class="card">
     <enhanced:img class="img" src="../assets/avatar.png" />
     <p class="one">
-      Hello there! I'm Jakub, a passionate and innovative web developer
-      dedicated to crafting seamless and visually appealing digital experiences.
+      Hello there! I'm <span>Jakub</span>, a passionate and innovative web
+      developer dedicated to crafting seamless and visually appealing digital
+      experiences.
     </p>
     <p class="two">
       My journey in the world of web development began in 2023. Since then, I've
@@ -39,5 +40,9 @@
 
   p {
     font-size: var(--fs-md);
+  }
+
+  span {
+    color: var(--color-primary);
   }
 </style>

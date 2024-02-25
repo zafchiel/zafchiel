@@ -1,30 +1,5 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
-  // import type { Action } from "svelte/action";
-
-  // let isIntersecting = false;
-
-  // const observerAction: Action = (node) => {
-  //   if (window.IntersectionObserver) {
-  //     const observer = new IntersectionObserver(
-  //       (entries) => {
-  //         console.log(node.id);
-  //         isIntersecting = entries[0].isIntersecting;
-  //       },
-  //       {
-  //         threshold: 0.5,
-  //       }
-  //     );
-
-  //     observer.observe(node);
-
-  //     return {
-  //       destroy() {
-  //         observer.unobserve(node);
-  //       },
-  //     };
-  //   }
-  // };
 </script>
 
 <section id="tech" use:intersectionObserverAction>
@@ -44,7 +19,7 @@
 <style>
   div {
     height: 300px;
-    background-color: sienna;
+    background-color: #222;
     border-radius: 4px;
     margin-top: 1rem;
     margin-bottom: 2rem;
