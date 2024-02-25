@@ -19,7 +19,7 @@
 <style>
   div {
     height: 300px;
-    background-color: #222;
+    background-color: var(--color-base-850);
     border-radius: 4px;
     margin-top: 1rem;
     margin-bottom: 2rem;

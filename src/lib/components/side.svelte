@@ -44,6 +44,7 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     transition: opacity 0.2s ease-in-out;
+    color: var(--color-primary);
   }
 
   .hidden {
@@ -60,12 +61,12 @@
   nav.expanded a {
     min-width: 250px;
     background-color: transparent;
-    border: 1px solid seashell;
+    /* border: 1px solid var(--color-primary); */
     color: inherit;
   }
 
   nav.expanded a.active {
-    background-color: seashell;
+    background-color: var(--color-primary);
     color: #151515;
   }
 
@@ -99,7 +100,7 @@
     height: 100%;
     background: linear-gradient(
       rgba(0, 0, 0, 0) 0%,
-      rgba(255, 255, 255, 0.5) 10%,
+      var(--color-primary) 10%,
       rgba(0, 0, 0, 0) 95%
     );
   }

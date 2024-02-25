@@ -3,6 +3,7 @@
 </script>
 
 <section id="about" use:intersectionObserverAction>
+  <div class="dots"></div>
   <h2>About</h2>
   <div class="card">
     <enhanced:img class="img" src="../assets/avatar.png" />
@@ -20,6 +21,10 @@
 </section>
 
 <style>
+  section {
+    position: relative;
+  }
+
   .card {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -44,5 +49,15 @@
 
   span {
     color: var(--color-primary);
+  }
+
+  .dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scale: 1.03;
+    background-image: url("../assets/dot.png");
+    background-repeat: space;
+    z-index: -1;
   }
 </style>
