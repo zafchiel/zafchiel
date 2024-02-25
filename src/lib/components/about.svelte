@@ -1,9 +1,10 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
+  import DotsBackground from "./dots-background.svelte";
 </script>
 
 <section id="about" use:intersectionObserverAction>
-  <div class="dots"></div>
+  <DotsBackground />
   <h2>About</h2>
   <div class="card">
     <enhanced:img class="img" src="../assets/avatar.png" />
@@ -49,15 +50,5 @@
 
   span {
     color: var(--color-primary);
-  }
-
-  .dots {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    scale: 1.03;
-    background-image: url("../assets/dot.png");
-    background-repeat: space;
-    z-index: -1;
   }
 </style>

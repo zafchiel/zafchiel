@@ -30,7 +30,7 @@
   .wrapper {
     display: grid;
     grid-template-columns: 250px minmax(650px, 760px);
-    gap: 2rem;
+    gap: 2.5rem;
     margin: 280px auto 0 auto;
     padding: 1.5rem;
     width: fit-content;

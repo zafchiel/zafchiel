@@ -1,5 +1,5 @@
 <script>
-  import Arrow from "$lib/assets/arrow.svelte";
+  import Arrow from "$lib/components/arrow.svelte";
 </script>
 
 <section id="home">

@@ -146,7 +146,7 @@
   }
 
   div {
-    --left-offset: 35px;
+    --left-offset: 40px;
 
     position: absolute;
     top: 0;

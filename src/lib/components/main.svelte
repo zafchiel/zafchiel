@@ -1,5 +1,5 @@
 <script>
-  import Plot from "$lib/assets/plot.svelte";
+  import Plot from "$lib/components/plot.svelte";
   import { getExpanded } from "$lib/stores/expaded-store";
   import About from "./about.svelte";
   import Contact from "./contact.svelte";
