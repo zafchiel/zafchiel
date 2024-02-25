@@ -2,7 +2,7 @@
   import { getExpanded } from "$lib/stores/expaded-store";
   import About from "./about.svelte";
   import Contact from "./contact.svelte";
-  import Intro from "./intro.svelte";
+  import Home from "./home.svelte";
   import Projects from "./projects.svelte";
   import Tech from "./tech.svelte";
 
@@ -10,7 +10,7 @@
 </script>
 
 <main>
-  <Intro />
+  <Home />
   <div class:hidden={!$expanded}>
     <About />
     <Tech />

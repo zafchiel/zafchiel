@@ -6,13 +6,16 @@
   <h2>About</h2>
   <div></div>
   <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, unde!
-    Ad illo similique perferendis atque placeat. Voluptatum fuga quam temporibus
-    consectetur neque fugit nobis dolor, dolorum quisquam sequi quos optio.
-    Harum provident velit eveniet dolor, voluptate minima aliquam cupiditate,
-    temporibus odio animi facilis similique voluptatum eius saepe nemo optio.
-    Deserunt asperiores amet, quod officia minima magni provident veritatis nisi
-    ipsam.
+    Hello there! I'm Jakub, a passionate and innovative web developer dedicated
+    to crafting seamless and visually appealing digital experiences. With a
+    strong foundation in front-end and back-end technologies, I thrive on
+    turning creative ideas into functional, user-friendly websites.
+  </p>
+  <p>
+    My journey in the world of web development began in 2023. Since then, I've
+    immersed myself in the ever-evolving tech landscape, honing my skills in
+    HTML, CSS, JavaScript, and various frameworks to build responsive and
+    dynamic websites.
   </p>
 </section>
 

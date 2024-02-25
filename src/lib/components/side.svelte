@@ -9,7 +9,13 @@
   <div class="holder">
     <h3 class:hidden={!$expanded}>Menu</h3>
     <nav class:expanded={$expanded}>
-      <a href="#intro">Intro</a>
+      <a
+        href="#home"
+        on:click={(e) => {
+          e.preventDefault();
+          window.scrollTo(0, 0);
+        }}>Home</a
+      >
       <a href="#about" class:active={$activeLinkStore === "about"}>About</a>
       <a href="#tech" class:active={$activeLinkStore === "tech"}>Tech</a>
       <a href="#projects" class:active={$activeLinkStore === "projects"}
