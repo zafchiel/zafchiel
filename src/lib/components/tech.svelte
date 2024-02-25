@@ -1,10 +1,11 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
+  import Marquee from "./marquee.svelte";
 </script>
 
 <section id="tech" use:intersectionObserverAction>
   <h2>Tech</h2>
-  <div></div>
+  <Marquee />
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio dolorum
     reprehenderit? Nesciunt sunt vitae debitis fuga quas error veritatis
@@ -17,11 +18,7 @@
 </section>
 
 <style>
-  div {
-    height: 300px;
-    background-color: var(--color-base-850);
-    border-radius: 4px;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+  section {
+    min-width: 0;
   }
 </style>
