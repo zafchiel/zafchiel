@@ -78,7 +78,7 @@ h1 {
 
 h2 {
   font-size: var(--fs-xl);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 500;
   color: var(--color-primary);
 }
