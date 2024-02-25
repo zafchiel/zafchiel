@@ -21,7 +21,7 @@
           path.setAttribute("stroke-dashoffset", pathLength.toString());
         }
 
-        let drawLength = pathLength * scrollPercentage;
+        let drawLength = (pathLength / 1.2) * scrollPercentage;
         path.setAttribute(
           "stroke-dashoffset",
           (pathLength - drawLength).toString()

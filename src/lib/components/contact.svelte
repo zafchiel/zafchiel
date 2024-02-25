@@ -4,15 +4,21 @@
 
 <section id="contact" use:intersectionObserverAction>
   <h2>Contact</h2>
-  <div></div>
+  <div>
+    <p>
+      If you have any questions or would like to work together, feel free to
+      contact me at <span class="primary_color">example@mail.com</span>.
+    </p>
+    <p>
+      <a href="https://github.com/zafchiel"
+        ><span class="primary_color">Github</span></a
+      >
+    </p>
+  </div>
 </section>
 
 <style>
-  div {
-    height: 300px;
-    background-color: var(--color-base-850);
-    border-radius: 4px;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+  .primary_color {
+    color: var(--color-primary);
   }
 </style>

@@ -72,11 +72,10 @@
 
   a {
     text-transform: capitalize;
-    text-decoration: none;
     color: black;
     padding: 0.5rem 1.5rem;
     border-radius: var(--border-radius-sm);
-    background-color: seashell;
+    background-color: var(--color-text);
     min-width: 0;
     transition: 0.3s ease-in-out;
     font-weight: 600;

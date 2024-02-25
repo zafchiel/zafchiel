@@ -18,7 +18,6 @@
 
   a {
     font-size: var(--fs-sm);
-    text-decoration: none;
     color: var(--color-primary);
     opacity: 0.7;
     display: flex;
