@@ -79,7 +79,7 @@
 <style>
   .slider {
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
     white-space: nowrap;
     padding: 1rem 0;
     position: relative;
