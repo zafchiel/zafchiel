@@ -29,7 +29,7 @@
   .card {
     display: grid;
     grid-template-columns: min-content 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 0.3rem;
   }
 
