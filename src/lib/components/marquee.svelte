@@ -8,6 +8,7 @@
   import reactIcon from "$lib/assets/tech/react.svg";
   import svelteIcon from "$lib/assets/tech/svelte-icon.svg";
   import svelteKitIcon from "$lib/assets/tech/svelte-kit.svg";
+  import sqlIcon from "$lib/assets/tech/sql.svg";
 
   const duplicateSlide = (node: HTMLElement) => {
     const slide = node.querySelector(".slide");
@@ -21,6 +22,7 @@
 
 <div class="slider" use:duplicateSlide>
   <div class="slide">
+    <img src={sqlIcon} alt="avatar" width="100" height="100" title="SQL" />
     <img
       src={jsIcon}
       alt="avatar"
