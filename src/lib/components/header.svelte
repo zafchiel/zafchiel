@@ -5,6 +5,8 @@
 
   const expanded = getExpanded();
 
+  let isNavVisible = true;
+
   let scrollDirection: "down" | "up" = "down";
   let lastKnownScrollPosition = 0;
 
@@ -35,11 +37,48 @@
       window.removeEventListener("scroll", getDirection);
     };
   });
+
+  const handleLinkClick = () => {
+    isNavVisible = false;
+  };
 </script>
 
-<header class:hidden={!$expanded} class:down={scrollDirection === "down"}>
+<header
+  class:hidden={!$expanded}
+  class:down={scrollDirection === "down"}
+  class:nav_visible={isNavVisible}
+>
   <h3>Zafchiel</h3>
-  <p>BURG</p>
+  <button on:click={() => (isNavVisible = !isNavVisible)}>BURG</button>
+  <nav class:nav_visible={isNavVisible}>
+    <a
+      href="#home"
+      on:click={(e) => {
+        e.preventDefault();
+        window.scrollTo(0, 0);
+      }}>Home</a
+    >
+    <a
+      href="#about"
+      on:click={handleLinkClick}
+      class:active={$activeLinkStore === "about"}>About</a
+    >
+    <a
+      href="#tech"
+      on:click={handleLinkClick}
+      class:active={$activeLinkStore === "tech"}>Tech</a
+    >
+    <a
+      href="#projects"
+      on:click={handleLinkClick}
+      class:active={$activeLinkStore === "projects"}>Projects</a
+    >
+    <a
+      href="#contact"
+      on:click={handleLinkClick}
+      class:active={$activeLinkStore === "contact"}>Contact</a
+    >
+  </nav>
 </header>
 
 <style>
@@ -53,6 +92,7 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: unset;
     display: none;
     justify-content: space-between;
     padding: 1rem;
@@ -61,12 +101,37 @@
     transition: 0.3s ease-in-out;
     transform: translateY(-100%);
 
+    &.nav_visible {
+      bottom: 0;
+    }
+
     &.down {
       transform: translateY(0);
     }
 
     & h3 {
       text-transform: lowercase;
+    }
+
+    & button {
+      z-index: 2;
+      height: fit-content;
+      padding: 0.5rem;
+    }
+  }
+
+  nav {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fs-lg);
+
+    &.nav_visible {
+      display: flex;
     }
   }
 
