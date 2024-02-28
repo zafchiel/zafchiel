@@ -12,10 +12,12 @@
 
   const duplicateSlide = (node: HTMLElement) => {
     const slide = node.querySelector(".slide");
-
     if (slide) {
-      node.appendChild(slide.cloneNode(true));
-      node.appendChild(slide.cloneNode(true));
+      Array.from(slide.children).forEach((child) => {
+        const clone = child.cloneNode() as HTMLElement;
+        clone.setAttribute("aria-hidden", "true");
+        slide.appendChild(clone);
+      });
     }
   };
 </script>
@@ -85,45 +87,23 @@
     white-space: nowrap;
     padding: 1rem 0;
     position: relative;
-  }
-
-  .slider::before,
-  .slider::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 80px;
-    top: 0;
-    z-index: 3;
-    pointer-events: none;
-  }
-
-  .slider::before {
-    left: 0;
-    background: linear-gradient(
-      to right,
-      var(--color-base-900),
-      rgba(0, 0, 0, 0)
-    );
-  }
-
-  .slider::after {
-    right: 0;
-    background: linear-gradient(
-      to left,
-      var(--color-base-900),
-      rgba(0, 0, 0, 0)
+    display: flex;
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
     );
   }
 
   .slide {
-    display: inline-block;
-    animation: sliding 10s linear infinite;
-  }
+    --spacing: 2rem;
 
-  .slide > * {
-    display: inline-block;
-    margin: 0 2.5rem;
+    animation: sliding 15s linear infinite;
+    display: flex;
+    gap: var(--spacing);
+    width: max-content;
   }
 
   .slider:hover .slide {
@@ -135,7 +115,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(calc(-50% - calc(var(--spacing) / 2)));
     }
   }
 </style>
