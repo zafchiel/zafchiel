@@ -21,4 +21,8 @@
   section {
     min-width: 0;
   }
+
+  p {
+    font-size: var(--fs-md);
+  }
 </style>

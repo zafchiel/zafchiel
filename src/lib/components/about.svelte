@@ -34,8 +34,8 @@
   }
 
   .card .img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: var(--border-radius-md);
     object-fit: cover;
   }
