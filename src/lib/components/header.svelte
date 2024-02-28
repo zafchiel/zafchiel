@@ -56,6 +56,7 @@
       on:click={(e) => {
         e.preventDefault();
         window.scrollTo(0, 0);
+        isNavVisible = false;
       }}>Home</a
     >
     <a
