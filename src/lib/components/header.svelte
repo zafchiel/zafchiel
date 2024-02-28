@@ -92,13 +92,13 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: unset;
+    bottom: 90%;
     display: none;
     justify-content: space-between;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(16px);
+    transition: 0.5s ease-in-out;
     transform: translateY(-100%);
 
     &.nav_visible {
@@ -127,11 +127,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     font-size: var(--fs-lg);
 
     &.nav_visible {
       display: flex;
+    }
+
+    & a {
+      padding-block: 1rem;
+
+      &.active {
+        text-decoration: underline var(--color-primary);
+      }
     }
   }
 
