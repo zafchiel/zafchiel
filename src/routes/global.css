@@ -12,12 +12,14 @@ a {
 :root {
   scroll-behavior: smooth;
 
-  /* --color-primary: #ff6b6b; */
   --color-primary: #b2ffd6;
   --color-secondary: #f9f871;
   --color-tertiary: #f9f9f9;
   --color-dark: #010513;
   --color-text: #f8f8f8;
+
+  --color-faded-text: #f8f8f8b3;
+  --color-primary-faded-text: #b2ffd6b1;
   
   --color-base-750: #3c3c3c;
   --color-base-800: #2f2f2f;

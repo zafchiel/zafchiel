@@ -86,8 +86,6 @@
     width: 100%;
     white-space: nowrap;
     padding: 1rem 0;
-    position: relative;
-    display: flex;
     mask: linear-gradient(
       90deg,
       transparent,
@@ -100,10 +98,10 @@
   .slide {
     --spacing: 2rem;
 
-    animation: sliding 15s linear infinite;
+    width: max-content;
     display: flex;
     gap: var(--spacing);
-    width: max-content;
+    animation: sliding 20s linear infinite;
   }
 
   .slider:hover .slide {

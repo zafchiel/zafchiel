@@ -18,8 +18,7 @@
 
   a {
     font-size: var(--fs-sm);
-    color: var(--color-primary);
-    opacity: 0.7;
+    color: var(--color-primary-faded-text);
     display: flex;
     align-items: center;
     gap: 0.2rem;
