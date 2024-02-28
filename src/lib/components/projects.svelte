@@ -8,6 +8,13 @@
       title: "Flashcards/HUH",
       description: "A flashcard app for learning anything you want.",
       imgage: "flashcards.jpg",
+      stack: ["TypeScript", "SvelteKit"],
+    },
+    {
+      title: "Flashcads/HUH",
+      description: "A flashcard app for learning anything you want.",
+      imgage: "flashcards.jpg",
+      stack: ["TypeScript", "SvelteKit"],
     },
   ];
 </script>
@@ -15,28 +22,38 @@
 <section id="projects" use:intersectionObserverAction>
   <DotsBackground />
   <h2>Projects</h2>
-  <a href="">
-    <div class="wrapper">
-      <p class="number">01</p>
-      <div class="stack">
-        <LinkArrow />
-        <p>TypeScript</p>
-        <p>SvelteKit</p>
-      </div>
-      <div class="project">
-        <h3>Project Title</h3>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          eaque harum dolor quisquam voluptas eum.
-        </p>
-      </div>
-    </div>
-  </a>
+  <div class="display_projects">
+    {#each projects as project, index}
+      <a href="">
+        <div class="wrapper">
+          <p class="number">{`0${index + 1}`}</p>
+          <div class="stack">
+            <LinkArrow />
+            {#each project.stack as tech}
+              <p>{tech}</p>
+            {/each}
+          </div>
+          <div class="project">
+            <h3>{project.title}</h3>
+            <p class="description">
+              {project.description}
+            </p>
+          </div>
+        </div>
+      </a>
+    {/each}
+  </div>
 </section>
 
 <style>
   section {
     position: relative;
+  }
+
+  .display_projects {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
   }
 
   .wrapper {
@@ -82,7 +99,8 @@
   .project {
     position: absolute;
     top: 150px;
-    padding-right: 2rem;
+    right: 2rem;
+    left: 2rem;
     transition: 0.3s linear;
 
     & h3 {
