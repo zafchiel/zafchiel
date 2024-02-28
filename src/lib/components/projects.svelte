@@ -8,28 +8,28 @@
       title: "Flashcards/HUH",
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      imgage: "flashcards.jpg",
+      image: "/fhuh.webp",
       stack: ["TypeScript", "SvelteKit"],
     },
     {
       title: "Flashcads/HUH",
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      imgage: "flashcards.jpg",
+      image: "/fhuh.webp",
       stack: ["TypeScript", "SvelteKit"],
     },
     {
       title: "Flashcads/HUH",
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      imgage: "flashcards.jpg",
+      image: "/fhuh.webp",
       stack: ["TypeScript", "SvelteKit"],
     },
     {
       title: "Flashcads/HUH",
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      imgage: "flashcards.jpg",
+      image: "/fhuh.webp",
       stack: ["TypeScript", "SvelteKit"],
     },
   ];
@@ -42,6 +42,7 @@
     {#each projects as project, index}
       <a href="">
         <div class="wrapper">
+          <img src={project.image} />
           <p class="number">{`0${index + 1}`}</p>
           <div class="stack">
             <Triangle />
@@ -62,6 +63,14 @@
 </section>
 
 <style>
+  img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    max-width: 100%;
+    z-index: -1;
+  }
+
   section {
     position: relative;
   }
@@ -78,9 +87,9 @@
     position: relative;
     border: 1px solid var(--color-primary);
     border: 1px solid color-mix(in srgb, var(--color-primary), transparent);
+    border-radius: var(--border-radius-sm);
     padding: 2rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://images.unsplash.com/photo-1682686581221-c126206d12f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -126,8 +135,7 @@
   }
 
   .wrapper:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-      url("https://images.unsplash.com/photo-1682686581221-c126206d12f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
 
     & p.number {
       opacity: 0;
