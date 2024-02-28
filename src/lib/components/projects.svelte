@@ -1,18 +1,34 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
   import DotsBackground from "./dots-background.svelte";
-  import LinkArrow from "./link-arrow.svelte";
+  import Triangle from "./triangle.svelte";
 
   const projects = [
     {
       title: "Flashcards/HUH",
-      description: "A flashcard app for learning anything you want.",
+      description:
+        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
       imgage: "flashcards.jpg",
       stack: ["TypeScript", "SvelteKit"],
     },
     {
       title: "Flashcads/HUH",
-      description: "A flashcard app for learning anything you want.",
+      description:
+        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
+      imgage: "flashcards.jpg",
+      stack: ["TypeScript", "SvelteKit"],
+    },
+    {
+      title: "Flashcads/HUH",
+      description:
+        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
+      imgage: "flashcards.jpg",
+      stack: ["TypeScript", "SvelteKit"],
+    },
+    {
+      title: "Flashcads/HUH",
+      description:
+        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
       imgage: "flashcards.jpg",
       stack: ["TypeScript", "SvelteKit"],
     },
@@ -28,7 +44,7 @@
         <div class="wrapper">
           <p class="number">{`0${index + 1}`}</p>
           <div class="stack">
-            <LinkArrow />
+            <Triangle />
             {#each project.stack as tech}
               <p>{tech}</p>
             {/each}
@@ -58,7 +74,7 @@
 
   .wrapper {
     width: 100%;
-    min-height: 200px;
+    height: 250px;
     position: relative;
     border: 1px solid var(--color-primary);
     border: 1px solid color-mix(in srgb, var(--color-primary), transparent);
@@ -98,10 +114,10 @@
 
   .project {
     position: absolute;
-    top: 150px;
+    top: 200px;
     right: 2rem;
     left: 2rem;
-    transition: 0.3s linear;
+    transition: 0.3s ease-in-out;
 
     & h3 {
       text-align: right;
@@ -110,7 +126,7 @@
   }
 
   .wrapper:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
       url("https://images.unsplash.com/photo-1682686581221-c126206d12f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
     & p.number {
