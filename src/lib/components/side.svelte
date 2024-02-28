@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { activeLinkStore } from "$lib/stores/active-link-store";
   import { getExpanded } from "$lib/stores/expaded-store";
 
@@ -33,6 +33,10 @@
 </aside>
 
 <style>
+  .hidden {
+    opacity: 0;
+  }
+
   aside {
     position: relative;
   }
@@ -42,7 +46,7 @@
     top: 150px;
   }
 
-  h3 {
+  aside h3 {
     text-align: center;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -50,11 +54,7 @@
     color: var(--color-primary);
   }
 
-  .hidden {
-    opacity: 0;
-  }
-
-  nav {
+  aside nav {
     display: flex;
     flex-direction: column;
     align-items: self-end;

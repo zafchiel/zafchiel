@@ -82,7 +82,7 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
+section h2 {
   font-size: var(--fs-xl);
   margin-bottom: 1.5rem;
   font-weight: 500;

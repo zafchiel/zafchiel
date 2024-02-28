@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Header from "$lib/components/header.svelte";
   import Main from "$lib/components/main.svelte";
   import Side from "$lib/components/side.svelte";
   import { getExpanded } from "$lib/stores/expaded-store";
@@ -22,6 +23,7 @@
 <svelte:document on:scroll={handleScroll} />
 
 <div class="wrapper">
+  <Header />
   <Side />
   <Main />
 </div>
