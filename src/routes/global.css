@@ -65,6 +65,10 @@ a {
   }
 }
 
+html {
+  color-scheme: dark;
+}
+
 body {
     background-color: var(--color-base-900);
     color: var(--color-text);
