@@ -25,8 +25,11 @@
         >Contact</a
       >
     </nav>
+    <div class="contact_info" class:hidden={!$expanded}>
+      <p>example@mail.com</p>
+      <a href="https://github.com/zafchiel" target="_blank">Github</a>
+    </div>
   </div>
-  <!-- <div class="glow" /> -->
 </aside>
 
 <style>
@@ -61,7 +64,6 @@
   nav.expanded a {
     min-width: 250px;
     background-color: transparent;
-    /* border: 1px solid var(--color-primary); */
     color: inherit;
   }
 
@@ -70,7 +72,7 @@
     color: #151515;
   }
 
-  a {
+  nav a {
     text-transform: capitalize;
     color: black;
     padding: 0.5rem 1.5rem;
@@ -91,17 +93,13 @@
     scale: 1.03;
   }
 
-  .glow {
-    position: absolute;
-    top: 0;
-    right: -10px;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0) 0%,
-      var(--color-primary) 10%,
-      rgba(0, 0, 0, 0) 95%
-    );
+  .contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 2rem;
+    color: var(--color-faded-text);
   }
 
   @media (max-width: 1024px) {

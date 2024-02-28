@@ -9,28 +9,28 @@
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
       image: "/fhuh.webp",
-      stack: ["TypeScript", "SvelteKit"],
+      stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
     },
     {
-      title: "Flashcads/HUH",
+      title: "Flashcards/HUH",
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
       image: "/fhuh.webp",
-      stack: ["TypeScript", "SvelteKit"],
+      stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
     },
     {
-      title: "Flashcads/HUH",
+      title: "Flashcards/HUH",
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
       image: "/fhuh.webp",
-      stack: ["TypeScript", "SvelteKit"],
+      stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
     },
     {
-      title: "Flashcads/HUH",
+      title: "Flashcards/HUH",
       description:
         "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
       image: "/fhuh.webp",
-      stack: ["TypeScript", "SvelteKit"],
+      stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
     },
   ];
 </script>
@@ -135,6 +135,22 @@
   }
 
   .wrapper:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+
+    & p.number {
+      opacity: 0;
+    }
+
+    & .project {
+      top: 20px;
+    }
+
+    & .stack {
+      opacity: 1;
+    }
+  }
+
+  a:focus .wrapper {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
 
     & p.number {

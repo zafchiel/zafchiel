@@ -11,7 +11,7 @@
       contact me at <span class="primary_color">example@mail.com</span>.
     </p>
     <p>
-      <a href="https://github.com/zafchiel"
+      <a href="https://github.com/zafchiel" target="_blank"
         ><span class="primary_color">Github</span></a
       >
     </p>
