@@ -73,7 +73,7 @@
     position: relative;
     overflow: hidden;
     padding: 1rem 0;
-    background: url("../assets/dot.png.svg");
+    background: url("../assets/dot.svg");
   }
 
   .display_projects {

@@ -19,11 +19,11 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
   section {
     position: relative;
     text-wrap: balance;
-    padding: 1rem 0;
+    padding: 1rem;
     background: url("../assets/dot.svg");
   }
 
@@ -32,6 +32,10 @@
     grid-template-columns: min-content 1fr;
     gap: 0.5rem;
     padding: 0.3rem;
+
+    @container (width >= 478px) {
+      background: green;
+    }
   }
 
   .card .img {
