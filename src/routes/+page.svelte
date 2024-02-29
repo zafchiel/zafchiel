@@ -22,8 +22,8 @@
 
 <svelte:document on:scroll={handleScroll} />
 
+<Header />
 <div class="wrapper">
-  <Header />
   <Side />
   <Main />
 </div>
@@ -35,12 +35,11 @@
     gap: 2.5rem;
     margin: 280px auto 0 auto;
     padding: 1.5rem;
-    width: fit-content;
   }
 
   @media (max-width: 1024px) {
     .wrapper {
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
       padding: 1rem;
     }
   }

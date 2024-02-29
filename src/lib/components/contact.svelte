@@ -1,6 +1,5 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
-  import DotsBackground from "./dots-background.svelte";
 </script>
 
 <section id="contact" use:intersectionObserverAction>

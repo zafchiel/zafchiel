@@ -5,7 +5,7 @@
 
   const expanded = getExpanded();
 
-  let isNavVisible = true;
+  let isNavVisible = false;
 
   let scrollDirection: "down" | "up" = "down";
   let lastKnownScrollPosition = 0;

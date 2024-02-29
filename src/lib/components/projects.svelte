@@ -1,6 +1,5 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
-  import DotsBackground from "./dots-background.svelte";
   import Triangle from "./triangle.svelte";
 
   const projects = [
@@ -36,7 +35,6 @@
 </script>
 
 <section id="projects" use:intersectionObserverAction>
-  <DotsBackground />
   <h2>Projects</h2>
   <div class="display_projects">
     {#each projects as project, index}
@@ -73,6 +71,9 @@
 
   section {
     position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+    background: url("../assets/dot.png.svg");
   }
 
   .display_projects {

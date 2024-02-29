@@ -1,10 +1,8 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
-  import DotsBackground from "./dots-background.svelte";
 </script>
 
 <section id="about" use:intersectionObserverAction>
-  <DotsBackground />
   <h2>About</h2>
   <div class="card">
     <enhanced:img class="img" src="../assets/avatar.png" />
@@ -24,6 +22,9 @@
 <style>
   section {
     position: relative;
+    text-wrap: balance;
+    padding: 1rem 0;
+    background: url("../assets/dot.svg");
   }
 
   .card {
