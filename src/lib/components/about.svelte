@@ -31,7 +31,6 @@
     display: grid;
     grid-template-columns: min-content 1fr;
     gap: 0.5rem;
-    padding: 0.3rem;
 
     @container (width >= 478px) {
       background: green;

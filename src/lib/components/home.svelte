@@ -34,4 +34,10 @@
     align-items: center;
     gap: 0.2rem;
   }
+
+  @media (max-width: 1024px) {
+    section {
+      padding: 1rem;
+    }
+  }
 </style>

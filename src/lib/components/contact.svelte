@@ -18,6 +18,10 @@
 </section>
 
 <style>
+  section {
+    padding: 1rem;
+  }
+
   .primary_color {
     color: var(--color-primary);
   }

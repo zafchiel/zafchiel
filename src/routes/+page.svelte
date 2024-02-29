@@ -40,7 +40,7 @@
   @media (max-width: 1024px) {
     .wrapper {
       grid-template-columns: auto;
-      padding: 1rem;
+      padding: 0;
     }
   }
 </style>

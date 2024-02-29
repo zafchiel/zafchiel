@@ -72,7 +72,7 @@
   section {
     position: relative;
     overflow: hidden;
-    padding: 1rem 0;
+    padding: 1rem;
     background: url("../assets/dot.svg");
   }
 
