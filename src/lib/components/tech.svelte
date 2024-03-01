@@ -7,13 +7,13 @@
   <h2>Tech</h2>
   <Marquee />
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio dolorum
-    reprehenderit? Nesciunt sunt vitae debitis fuga quas error veritatis
-    deserunt repellat. Aliquid ipsum atque officiis, a dolorem corrupti
-    assumenda. Mollitia expedita minima nostrum iure! Laboriosam molestiae
-    numquam eligendi saepe porro assumenda voluptatibus nobis harum illum
-    asperiores itaque, aliquam consequatur nulla placeat nihil perferendis,
-    ipsam optio pariatur aspernatur quibusdam vitae!
+    I mainly specialise in front-end technologiec such as HTML, CSS, and
+    JavaScript. I also have experience with frameworks such as React, Svelte,
+    and Vue.
+  </p>
+  <p>
+    I have a good understanding of back-end technologies such as Node.js and
+    Bun. I use python mainly for my data science activities in college.
   </p>
 </section>
 
@@ -25,5 +25,6 @@
 
   p {
     font-size: var(--fs-md);
+    margin-top: 0.5rem;
   }
 </style>

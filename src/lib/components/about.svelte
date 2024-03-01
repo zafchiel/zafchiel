@@ -60,8 +60,8 @@
       grid-area: 2 / 1 / 3 / 3;
     }
     .img {
-      width: 200px !important;
-      height: 200px !important;
+      width: 250px !important;
+      height: 250px !important;
     }
   }
 </style>
