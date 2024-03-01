@@ -24,9 +24,9 @@
   <h2>Projects</h2>
   <div class="display_projects">
     {#each projects as project, index}
-      <a href="">
+      <a href="/">
         <div class="wrapper">
-          <img src={project.image} />
+          <img src={project.image} alt={project.title} />
           <p class="number">{`0${index + 1}`}</p>
           <div class="stack">
             <Triangle />
