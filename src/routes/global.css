@@ -93,3 +93,7 @@ h3 {
   font-size: var(--fs-lg);
   font-weight: 200;
 }
+
+p {
+  max-width: 60ch;
+}

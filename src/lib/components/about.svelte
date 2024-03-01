@@ -19,7 +19,7 @@
   </div>
 </section>
 
-<style lang="postcss">
+<style>
   section {
     position: relative;
     text-wrap: balance;
@@ -30,10 +30,20 @@
   .card {
     display: grid;
     grid-template-columns: min-content 1fr;
-    gap: 0.5rem;
 
-    @container (width >= 478px) {
-      background: green;
+    gap: 0.5rem;
+  }
+
+  @media (width < 480px) {
+    .one {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    .two {
+      grid-area: 2 / 1 / 3 / 3;
+    }
+    .img {
+      width: 200px !important;
+      height: 200px !important;
     }
   }
 
@@ -41,11 +51,10 @@
     width: 100px;
     height: 100px;
     border-radius: var(--border-radius-md);
-    object-fit: cover;
   }
 
   .two {
-    grid-column: span 2;
+    grid-column: 1 / 3;
   }
 
   p {
