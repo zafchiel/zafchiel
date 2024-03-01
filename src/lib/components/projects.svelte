@@ -153,16 +153,16 @@
       transparent 80%,
       var(--color-primary) 100%
     );
-    padding: 0.5rem;
+    padding: 1rem;
 
     & p.number {
       opacity: 0;
     }
 
     & .project {
-      top: 0.5rem;
-      left: 0.5rem;
-      right: 0.5rem;
+      top: 1rem;
+      left: 1rem;
+      right: 1rem;
 
       & h3 {
         margin-bottom: 1rem;
@@ -171,6 +171,13 @@
 
     & .stack {
       opacity: 1;
+    }
+  }
+
+  @media (width < 480px) {
+    .wrapper:hover,
+    a:focus .wrapper {
+      padding: 0.5rem;
     }
   }
 </style>
