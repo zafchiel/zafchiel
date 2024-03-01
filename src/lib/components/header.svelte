@@ -49,7 +49,10 @@
   class:nav_visible={isNavVisible}
 >
   <h3>Zafchiel</h3>
-  <button on:click={() => (isNavVisible = !isNavVisible)}>BURG</button>
+  <button>
+    <input type="checkbox" id="burger" bind:checked={isNavVisible} />
+  </button>
+
   <nav class:nav_visible={isNavVisible}>
     <a
       href="#home"

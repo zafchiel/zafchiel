@@ -34,19 +34,6 @@
     gap: 0.5rem;
   }
 
-  @media (width < 480px) {
-    .one {
-      grid-area: 1 / 1 / 2 / 3;
-    }
-    .two {
-      grid-area: 2 / 1 / 3 / 3;
-    }
-    .img {
-      width: 200px !important;
-      height: 200px !important;
-    }
-  }
-
   .card .img {
     width: 100px;
     height: 100px;
@@ -63,5 +50,18 @@
 
   span {
     color: var(--color-primary);
+  }
+
+  @media (width < 480px) {
+    .one {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    .two {
+      grid-area: 2 / 1 / 3 / 3;
+    }
+    .img {
+      width: 200px !important;
+      height: 200px !important;
+    }
   }
 </style>

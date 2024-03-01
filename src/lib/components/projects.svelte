@@ -139,11 +139,12 @@
 
     & h3 {
       text-align: right;
-      margin-bottom: 1rem;
+      margin-bottom: 5rem;
     }
   }
 
-  .wrapper:hover {
+  .wrapper:hover,
+  a:focus .wrapper {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
     border-image-source: radial-gradient(
       ellipse at right top,
@@ -152,29 +153,20 @@
       transparent 80%,
       var(--color-primary) 100%
     );
+    padding: 0.5rem;
 
     & p.number {
       opacity: 0;
     }
 
     & .project {
-      top: 20px;
-    }
+      top: 0.5rem;
+      left: 0.5rem;
+      right: 0.5rem;
 
-    & .stack {
-      opacity: 1;
-    }
-  }
-
-  a:focus .wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
-
-    & p.number {
-      opacity: 0;
-    }
-
-    & .project {
-      top: 20px;
+      & h3 {
+        margin-bottom: 1rem;
+      }
     }
 
     & .stack {
