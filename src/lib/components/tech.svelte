@@ -7,12 +7,22 @@
   <h2>Tech</h2>
   <Marquee />
   <ul>
-    <li>Skilled front-end developer proficient in HTML, CSS, and JavaScript</li>
     <li>
-      Experienced in building interactive interfaces using React and Svelte
+      Skilled front-end developer proficient in <span>HTML</span>,
+      <span> CSS</span>, and <span>JavaScript / TypeScript</span>
     </li>
-    <li>Possess knowledge of back-end technologies like Node.js and Bun</li>
-    <li>Utilizes Python and SQL for data science projects during my studies</li>
+    <li>
+      Experienced in building interactive interfaces using <span>React</span>
+      and <span>Svelte</span>
+    </li>
+    <li>
+      Possess knowledge of back-end technologies like <span>Node.js</span> and
+      <span>Bun</span>
+    </li>
+    <li>
+      Utilizes <span>Python</span> and <span>SQL</span> for data science projects
+      during my studies
+    </li>
   </ul>
 </section>
 
@@ -29,6 +39,10 @@
     & li {
       margin: 1rem 0;
       font-size: var(--fs-md);
+    }
+
+    & span {
+      color: var(--color-primary);
     }
   }
 </style>
