@@ -86,8 +86,16 @@
     width: 100%;
     height: 250px;
     position: relative;
-    border: 1px solid var(--color-primary);
-    border: 1px solid color-mix(in srgb, var(--color-primary), transparent);
+    border: 2px solid;
+    border-image-source: radial-gradient(
+      ellipse at left top,
+      var(--color-primary-faded-text),
+      transparent 30%,
+      transparent 80%,
+      var(--color-primary-faded-text) 100%
+    );
+    border-image-slice: 1;
+
     border-radius: var(--border-radius-sm);
     padding: 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -124,7 +132,7 @@
 
   .project {
     position: absolute;
-    top: 200px;
+    top: 180px;
     right: 2rem;
     left: 2rem;
     transition: 0.3s ease-in-out;
@@ -137,6 +145,13 @@
 
   .wrapper:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+    border-image-source: radial-gradient(
+      ellipse at right top,
+      var(--color-primary),
+      transparent 30%,
+      transparent 80%,
+      var(--color-primary) 100%
+    );
 
     & p.number {
       opacity: 0;
