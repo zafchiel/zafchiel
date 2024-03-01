@@ -6,8 +6,9 @@
   <h2>Contact</h2>
   <div>
     <p>
-      If you have any questions or would like to work together, feel free to
-      contact me at <span class="primary_color">example@mail.com</span>.
+      If you have any questions, feel free to contact me at <span
+        class="primary_color">example@mail.com</span
+      >.
     </p>
     <p>
       <a href="https://github.com/zafchiel" target="_blank"

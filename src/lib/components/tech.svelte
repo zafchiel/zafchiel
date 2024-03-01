@@ -6,15 +6,14 @@
 <section id="tech" use:intersectionObserverAction>
   <h2>Tech</h2>
   <Marquee />
-  <p>
-    I mainly specialise in front-end technologiec such as HTML, CSS, and
-    JavaScript. I also have experience with frameworks such as React, Svelte,
-    and Vue.
-  </p>
-  <p>
-    I have a good understanding of back-end technologies such as Node.js and
-    Bun. I use python mainly for my data science activities in college.
-  </p>
+  <ul>
+    <li>Skilled front-end developer proficient in HTML, CSS, and JavaScript</li>
+    <li>
+      Experienced in building interactive interfaces using React and Svelte
+    </li>
+    <li>Possess knowledge of back-end technologies like Node.js and Bun</li>
+    <li>Utilizes Python and SQL for data science projects during my studies</li>
+  </ul>
 </section>
 
 <style>
@@ -23,8 +22,13 @@
     padding: 1rem;
   }
 
-  p {
-    font-size: var(--fs-md);
-    margin-top: 0.5rem;
+  ul {
+    padding: 0.5rem;
+    list-style: url("/list-triangle.svg");
+
+    & li {
+      margin: 1rem 0;
+      font-size: var(--fs-md);
+    }
   }
 </style>

@@ -32,7 +32,8 @@
     color: var(--color-primary-faded-text);
     display: flex;
     align-items: center;
-    gap: 0.2rem;
+    gap: 0.5rem;
+    white-space: nowrap;
   }
 
   @media (max-width: 1024px) {

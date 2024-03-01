@@ -12,9 +12,10 @@
       experiences.
     </p>
     <p class="two">
-      My journey in the world of web development began in 2023. Since then, I've
-      immersed myself in honing my skills in HTML, CSS, JavaScript, and various
-      frameworks to build responsive and dynamic websites.
+      I'm studying at <span>Uniwersity of Lodz</span> and my journey in the world
+      of web development began in 2023. Since then, I've immersed myself in honing
+      my skills in HTML, CSS, JavaScript, and various frameworks to build responsive
+      and dynamic websites.
     </p>
   </div>
 </section>
