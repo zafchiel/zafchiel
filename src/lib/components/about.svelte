@@ -4,20 +4,18 @@
 
 <section id="about" use:intersectionObserverAction>
   <h2>About</h2>
-  <div class="card">
+  <div class="heading">
     <enhanced:img class="img" src="../assets/avatar.png" />
-    <p class="one">
-      Hello there! I'm <span>Zafchiel</span>, a passionate and innovative web
-      developer dedicated to crafting seamless and visually appealing digital
-      experiences.
-    </p>
-    <p class="two">
-      I'm studying at <span>Uniwersity of Lodz</span> and my journey in the world
-      of web development began in 2023. Since then, I've immersed myself in honing
-      my skills in HTML, CSS, JavaScript, and various frameworks to build responsive
-      and dynamic websites.
-    </p>
+    <h3>
+      <span>Zafchiel</span> | Front-End Developer
+    </h3>
   </div>
+  <p>
+    I'm a passionate web developer driven to create user-friendly and visually
+    stunning websites. Since embarking on my web development journey in 2023,
+    I've honed my skills in HTML, CSS, JavaScript, and various frameworks.
+    Explore my portfolio to see how I bring websites to life!
+  </p>
 </section>
 
 <style>
@@ -28,21 +26,16 @@
     background: url("../assets/dot.svg");
   }
 
-  .card {
-    display: grid;
-    grid-template-columns: min-content 1fr;
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
-    gap: 0.5rem;
-  }
-
-  .card .img {
-    width: 100px;
-    height: 100px;
-    border-radius: var(--border-radius-md);
-  }
-
-  .two {
-    grid-column: 1 / 3;
+    & .img {
+      width: 100px;
+      height: 100px;
+      border-radius: var(--border-radius-md);
+    }
   }
 
   p {
@@ -51,18 +44,5 @@
 
   span {
     color: var(--color-primary);
-  }
-
-  @media (width < 480px) {
-    .one {
-      grid-area: 1 / 1 / 2 / 3;
-    }
-    .two {
-      grid-area: 2 / 1 / 3 / 3;
-    }
-    .img {
-      width: 250px !important;
-      height: 250px !important;
-    }
   }
 </style>
