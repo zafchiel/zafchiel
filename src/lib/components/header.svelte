@@ -7,6 +7,7 @@
   const expanded = getExpanded();
 
   let isNavVisible = false;
+  let navComponent: HTMLElement;
 
   let scrollDirection: "down" | "up" = "down";
   let lastKnownScrollPosition = 0;
@@ -41,6 +42,7 @@
 
   const handleLinkClick = () => {
     isNavVisible = false;
+    navComponent.setAttribute("aria-hidden", "true");
   };
 </script>
 
@@ -50,9 +52,19 @@
   class:nav_visible={isNavVisible}
 >
   <h3>Zafchiel</h3>
-  <HamburgerMenu on:nav-state={(e) => (isNavVisible = e.detail)} />
+  <HamburgerMenu
+    {isNavVisible}
+    on:nav-state={(e) => {
+      isNavVisible = e.detail;
+      navComponent.setAttribute("aria-hidden", (!e.detail).toString());
+    }}
+  />
 
-  <nav class:nav_visible={isNavVisible}>
+  <nav
+    class:nav_visible={isNavVisible}
+    bind:this={navComponent}
+    aria-hidden="true"
+  >
     <a
       href="#home"
       on:click={(e) => {
@@ -129,6 +141,7 @@
     align-items: center;
     gap: 0.5rem;
     font-size: var(--fs-lg);
+    overflow: hidden;
 
     &.nav_visible {
       display: flex;
