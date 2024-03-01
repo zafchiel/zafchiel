@@ -23,6 +23,7 @@
 <svelte:document on:scroll={handleScroll} />
 
 <Header />
+<div class="push_down"></div>
 <div class="wrapper">
   <Side />
   <Main />
@@ -33,8 +34,12 @@
     display: grid;
     grid-template-columns: 250px minmax(650px, 760px);
     gap: 2.5rem;
-    margin: 280px auto 0 auto;
+    margin: 0 auto;
     padding: 1.5rem;
+  }
+
+  .push_down {
+    height: 250px;
   }
 
   @media (max-width: 1024px) {

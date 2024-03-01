@@ -7,7 +7,7 @@
   <div class="card">
     <enhanced:img class="img" src="../assets/avatar.png" />
     <p class="one">
-      Hello there! I'm <span>Jakub</span>, a passionate and innovative web
+      Hello there! I'm <span>Zafchiel</span>, a passionate and innovative web
       developer dedicated to crafting seamless and visually appealing digital
       experiences.
     </p>
