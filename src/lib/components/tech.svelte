@@ -43,6 +43,7 @@
 
     & span {
       color: var(--color-primary);
+      font-weight: 600;
     }
   }
 </style>
