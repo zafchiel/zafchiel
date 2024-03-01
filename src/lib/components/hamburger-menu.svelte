@@ -37,26 +37,28 @@
 
   label .line {
     transition:
-      y 200ms ease-in 200ms,
+      transform 200ms ease-in 200ms,
       rotate 200ms ease-in,
       opacity 0ms ease-in 200ms;
-    transform-origin: center;
+    transform-origin: 50% 50%;
   }
 
   input[type="checkbox"]:checked + label .line {
     transition:
-      y 200ms ease-in,
+      transform 200ms ease-in,
       rotate 200ms ease-in 200ms,
       opacity 0ms ease-in 200ms;
   }
 
   input[type="checkbox"]:checked + label {
-    & :is(.top_line, .bot_line) {
+    /* doesn't work on firefox */
+    /* & :is(.top_line, .bot_line) {
       y: 45;
-    }
+    } */
 
     & .top_line {
       rotate: 45deg;
+      transform: translateY(20px);
     }
 
     & .mid_line {
@@ -65,6 +67,7 @@
 
     & .bot_line {
       rotate: -45deg;
+      transform: translateY(-20px);
     }
   }
 </style>
