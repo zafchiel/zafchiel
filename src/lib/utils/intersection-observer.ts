@@ -12,7 +12,7 @@ export const intersectionObserverAction: Action = (node) => {
             }
         }, 
         {
-            threshold: 0.1
+            threshold: 0.4
         }) 
 
         observer.observe(node);
