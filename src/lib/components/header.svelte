@@ -2,6 +2,7 @@
   import { activeLinkStore } from "$lib/stores/active-link-store";
   import { getExpanded } from "$lib/stores/expaded-store";
   import { onMount } from "svelte";
+  import HamburgerMenu from "./hamburger-menu.svelte";
 
   const expanded = getExpanded();
 
@@ -49,9 +50,7 @@
   class:nav_visible={isNavVisible}
 >
   <h3>Zafchiel</h3>
-  <button>
-    <input type="checkbox" id="burger" bind:checked={isNavVisible} />
-  </button>
+  <HamburgerMenu on:nav-state={(e) => (isNavVisible = e.detail)} />
 
   <nav class:nav_visible={isNavVisible}>
     <a
@@ -116,17 +115,14 @@
     & h3 {
       text-transform: lowercase;
     }
-
-    & button {
-      z-index: 2;
-      height: fit-content;
-      padding: 0.5rem;
-    }
   }
 
   nav {
     position: absolute;
-    inset: 0;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: none;
     flex-direction: column;
     justify-content: center;
