@@ -4,32 +4,18 @@
 
   const projects = [
     {
-      title: "Flashcards/HUH",
+      title: "Flashcards",
       description:
-        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      image: "/fhuh.webp",
+        "Flashcards is a web app that helps learners to memorize information. Lightweight and fast with a focus on usability. It is built with SvelteKit and TypeScript.",
+      image: "/projects/flashcards.webp",
       stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
     },
     {
-      title: "Flashcards/HUH",
+      title: "Link shortener",
       description:
-        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      image: "/fhuh.webp",
-      stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
-    },
-    {
-      title: "Flashcards/HUH",
-      description:
-        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      image: "/fhuh.webp",
-      stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
-    },
-    {
-      title: "Flashcards/HUH",
-      description:
-        "Distinctio dignissimos quo deleniti laborum laboriosam saepe quibusdam. Et ea neque et deserunt omnis nihil explicabo. Quos debitis quis et aut recusandae ut maiores.",
-      image: "/fhuh.webp",
-      stack: ["TypeScript", "SvelteKit", "PostgreSQL"],
+        "A link shortener that allows users to shorten long URLs and generate QR codes. It is built with TypeScript, React, and Redis.",
+      image: "/projects/short-link.webp",
+      stack: ["TypeScript", "React", "Redis"],
     },
   ];
 </script>
