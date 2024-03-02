@@ -42,12 +42,10 @@
 
   ul {
     list-style: none;
-    padding: 0.5rem;
 
     & li {
-      margin: 1rem 0;
       font-size: var(--fs-md);
-
+      margin: 1rem 0;
       display: flex;
       gap: 0.5rem;
     }
@@ -57,9 +55,8 @@
       background: url("/list-triangle.svg") no-repeat;
       background-size: cover;
       display: block;
-      width: 2rem;
-      height: 2rem;
-      min-width: 0;
+      width: 2.5rem;
+      height: 2.5rem;
     }
 
     & span {
