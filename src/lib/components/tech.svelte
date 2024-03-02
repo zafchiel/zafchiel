@@ -8,20 +8,28 @@
   <Marquee />
   <ul>
     <li>
-      Skilled front-end developer proficient in <span>HTML</span>,
-      <span> CSS</span>, and <span>JavaScript / TypeScript</span>
+      <div>
+        Skilled front-end developer proficient in <span>HTML</span>,
+        <span> CSS</span>, and <span>JavaScript / TypeScript</span>
+      </div>
     </li>
     <li>
-      Experienced in building interactive interfaces using <span>React</span>
-      and <span>Svelte</span>
+      <div>
+        Experienced in building interactive interfaces using <span>React</span>
+        and <span>Svelte</span>
+      </div>
     </li>
     <li>
-      Possess knowledge of back-end technologies like <span>Node.js</span> and
-      <span>Bun</span>
+      <div>
+        Possess knowledge of back-end technologies like <span>Node.js</span> and
+        <span>Bun</span>
+      </div>
     </li>
     <li>
-      Utilizes <span>Python</span> and <span>SQL</span> for data science projects
-      during my studies
+      <div>
+        Utilizes <span>Python</span> and <span>SQL</span> for data science projects
+        during my studies
+      </div>
     </li>
   </ul>
 </section>
@@ -33,12 +41,25 @@
   }
 
   ul {
+    list-style: none;
     padding: 0.5rem;
-    list-style: url("/list-triangle.svg");
 
     & li {
       margin: 1rem 0;
       font-size: var(--fs-md);
+
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    & li::before {
+      content: "";
+      background: url("/list-triangle.svg") no-repeat;
+      background-size: cover;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      min-width: 0;
     }
 
     & span {

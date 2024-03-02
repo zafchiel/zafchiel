@@ -21,6 +21,11 @@
 <style>
   section {
     padding: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  p {
+    margin: 0.5rem 0;
   }
 
   .primary_color {
