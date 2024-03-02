@@ -5,7 +5,7 @@
 <section id="about" use:intersectionObserverAction>
   <h2>About</h2>
   <div class="heading">
-    <enhanced:img class="img" src="../assets/avatar.png" />
+    <enhanced:img class="img" src="../assets/avatar.png" alt="avatar" />
     <h3>
       <span>Zafchiel</span> | Front-End Developer
     </h3>
