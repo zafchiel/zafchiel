@@ -99,7 +99,7 @@
         width="200%"
         height="200%"
       >
-        <feGaussianBlur stdDeviation="2 2" edgeMode="none"></feGaussianBlur>
+        <feGaussianBlur stdDeviation="2 2"></feGaussianBlur>
       </filter>
     </defs>
     <path
