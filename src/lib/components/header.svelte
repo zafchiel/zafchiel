@@ -48,7 +48,7 @@
 
 <header
   class:hidden={!$expanded}
-  class:down={scrollDirection === "down"}
+  class:header_visible={scrollDirection === "up"}
   class:nav_visible={isNavVisible}
 >
   <h3>Zafchiel</h3>
@@ -120,7 +120,7 @@
       bottom: 0;
     }
 
-    &.down {
+    &.header_visible {
       transform: translateY(0);
     }
 
