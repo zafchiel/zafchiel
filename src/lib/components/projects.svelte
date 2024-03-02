@@ -17,6 +17,20 @@
       image: "/projects/short-link.webp",
       stack: ["TypeScript", "React", "Redis"],
     },
+    {
+      title: "Mock project",
+      description:
+        "Corporis dolor repudiandae ea esse. Eligendi sed omnis mollitia placeat officiis expedita nisi voluptatem. Consequatur voluptates neque eveniet et. Similique et id omnis.",
+      image: "/projects/short-link.webp",
+      stack: ["TypeScript", "React", "Redis"],
+    },
+    {
+      title: "Mock project",
+      description:
+        "Corporis dolor repudiandae ea esse. Eligendi sed omnis mollitia placeat officiis expedita nisi voluptatem. Consequatur voluptates neque eveniet et. Similique et id omnis.",
+      image: "/projects/short-link.webp",
+      stack: ["TypeScript", "React", "Redis"],
+    },
   ];
 </script>
 
