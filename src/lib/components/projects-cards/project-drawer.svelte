@@ -16,7 +16,7 @@
     <Drawer.Content class="drawer_content">
       <div class="drawer_content_warper">
         <slot name="content" />
-        <Drawer.Close>Close</Drawer.Close>
+        <Drawer.Close autofocus>Close</Drawer.Close>
       </div>
     </Drawer.Content>
   </Drawer.Portal>
@@ -36,6 +36,7 @@
     border-radius: 0 10px 10px 0;
     padding: 1rem;
     background-color: var(--color-base-850);
+    box-shadow: 6px 0px 10px 0px rgba(30, 41, 36, 0.603);
   }
 
   .drawer_content_warper {
@@ -45,7 +46,7 @@
     gap: 1rem;
   }
 
-  :global([data-dialog-trigger], button) {
+  :global([data-dialog-trigger]) {
     border: none;
     background: none;
     display: block;
@@ -85,6 +86,16 @@
         opacity: 1;
       }
     }
+  }
+
+  :global([data-dialog-close]) {
+    padding: 0.5rem;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px var(--color-primary-faded-text) solid;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
   @media (width < 480px) {
