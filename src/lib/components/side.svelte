@@ -85,7 +85,7 @@
   }
 
   nav:has(a:hover) a:not(:hover) {
-    filter: blur(2px);
+    filter: blur(1.5px);
     scale: 0.97;
   }
   nav:has(a:hover) a:hover {

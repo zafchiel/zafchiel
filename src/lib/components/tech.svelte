@@ -21,7 +21,8 @@
     </li>
     <li>
       <div>
-        Possess knowledge of back-end technologies like <span>Node.js</span> and
+        Possess knowledge of back-end technologies such as <span>Node.js</span>
+        and
         <span>Bun</span>
       </div>
     </li>
@@ -55,8 +56,9 @@
       background: url("/list-triangle.svg") no-repeat;
       background-size: cover;
       display: block;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2rem;
+      height: 2rem;
+      flex-shrink: 0;
     }
 
     & span {

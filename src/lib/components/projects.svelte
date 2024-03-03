@@ -40,7 +40,7 @@
     {#each projects as project, index}
       <a href="/">
         <div class="wrapper">
-          <img src={project.image} alt={project.title} />
+          <img src={project.image} alt={`${project.title} card background`} />
           <p class="number">{`0${index + 1}`}</p>
           <div class="stack">
             <Triangle />

@@ -29,7 +29,7 @@
 
   div {
     display: grid;
-    gap: 15rem;
+    gap: 6rem;
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
   }
