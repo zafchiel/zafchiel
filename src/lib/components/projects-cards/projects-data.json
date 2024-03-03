@@ -1,0 +1,23 @@
+[
+        {
+            "title": "Flashcards",
+            "description":
+                "Flashcards is a web app that helps learners to memorize information. Lightweight and fast with a focus on usability. It is built with SvelteKit and TypeScript.",
+            "image": "/projects/flashcards.webp",
+            "bigImage": "./images/flashcards.webp",
+            "stack": ["TypeScript", "SvelteKit", "PostgreSQL"],
+            "repoLink": "https://github.com/zafchiel",
+            "liveLink": "https://flashcards.zafchiel.com"
+        },
+        {
+            "title": "Link shortener",
+            "description":
+                "A link shortener that allows users to shorten long URLs and generate QR codes. It is built with TypeScript, React, and Redis.",
+            "image": "/projects/short-link.webp",
+            "bigImage": "./images/flashcards.webp",
+
+            "stack": ["TypeScript", "React", "Redis"],
+            "repoLink": "https://github.com/zafchiel",
+            "liveLink": "https://flashcards.zafchiel.com"
+        }
+]

@@ -3,6 +3,7 @@
   import { getExpanded } from "$lib/stores/expaded-store";
   import { onMount } from "svelte";
   import HamburgerMenu from "./hamburger-menu.svelte";
+  import { drawerOpenedStore } from "$lib/stores/drawer.store";
 
   const expanded = getExpanded();
 
@@ -47,7 +48,7 @@
 </script>
 
 <header
-  class:hidden={!$expanded}
+  class:hidden={!$expanded || $drawerOpenedStore}
   class:header_visible={scrollDirection === "up"}
   class:nav_visible={isNavVisible}
 >
