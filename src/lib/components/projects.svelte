@@ -24,6 +24,6 @@
   .display_projects {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 1rem;
   }
 </style>

@@ -45,4 +45,11 @@
   p {
     margin-bottom: 1rem;
   }
+
+  @media (width < 800px) {
+    .gallery {
+      flex-direction: column;
+      height: auto;
+    }
+  }
 </style>
