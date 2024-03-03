@@ -85,6 +85,12 @@
     font-weight: 600;
     text-transform: uppercase;
     margin: 1rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-primary-faded-text);
+      color: var(--color-base-850);
+    }
   }
 
   @media (width < 480px) {

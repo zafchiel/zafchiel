@@ -38,11 +38,13 @@
     & header {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 0.5rem;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid var(--color-primary-faded-text);
       box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.2);
       padding: 0.5rem;
+      z-index: 2;
 
       & h3 {
         font-weight: 700;
@@ -51,7 +53,6 @@
       & .links {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
         color: var(--color-primary-faded-text);
       }
     }
