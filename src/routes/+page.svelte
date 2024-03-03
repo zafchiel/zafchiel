@@ -3,6 +3,7 @@
   import Main from "$lib/components/main.svelte";
   import Side from "$lib/components/side.svelte";
   import { getExpanded } from "$lib/stores/expaded-store";
+  import { drawerOpenedStore } from "$lib/stores/drawer.store";
 
   let expanded = getExpanded();
   let scrolledOver100 = false;
@@ -13,7 +14,11 @@
     if (scrollPosition >= 100 && !scrolledOver100) {
       expanded.set(true);
       scrolledOver100 = true;
-    } else if (scrollPosition < 100 && scrolledOver100) {
+    } else if (
+      scrollPosition < 100 &&
+      scrolledOver100 &&
+      $drawerOpenedStore === false
+    ) {
       expanded.set(false);
       scrolledOver100 = false;
     }

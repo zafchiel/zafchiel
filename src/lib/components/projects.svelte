@@ -1,5 +1,6 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
+  import Flashcards from "./projects-cards/flashcards.svelte";
   import Triangle from "./triangle.svelte";
 
   const projects = [
@@ -36,6 +37,7 @@
 
 <section id="projects" use:intersectionObserverAction>
   <h2>Projects</h2>
+  <Flashcards />
   <div class="display_projects">
     {#each projects as project, index}
       <a href="/">

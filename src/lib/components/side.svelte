@@ -5,7 +5,7 @@
   const expanded = getExpanded();
 </script>
 
-<aside>
+<section>
   <div class="holder">
     <h3 class:hidden={!$expanded}>Menu</h3>
     <nav class:expanded={$expanded}>
@@ -30,14 +30,14 @@
       <a href="https://github.com/zafchiel" target="_blank">Github</a>
     </div>
   </div>
-</aside>
+</section>
 
 <style>
   .hidden {
     opacity: 0;
   }
 
-  aside {
+  section {
     position: relative;
   }
 
@@ -46,7 +46,7 @@
     top: 150px;
   }
 
-  aside h3 {
+  section h3 {
     text-align: center;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -54,7 +54,7 @@
     color: var(--color-primary);
   }
 
-  aside nav {
+  section nav {
     display: flex;
     flex-direction: column;
     align-items: self-end;
@@ -98,12 +98,13 @@
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+    justify-content: flex-end;
     margin-top: 2rem;
     color: var(--color-faded-text);
   }
 
   @media (max-width: 1024px) {
-    aside {
+    section {
       display: none;
     }
   }
