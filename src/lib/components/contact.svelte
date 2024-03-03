@@ -1,21 +1,19 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
+  import githubIcon from "$lib/assets/github-icon.svg";
 </script>
 
 <section id="contact" use:intersectionObserverAction>
   <h2>Contact</h2>
-  <div>
-    <p>
-      If you have any questions, feel free to contact me at <span
-        class="primary_color">example@mail.com</span
-      >.
-    </p>
-    <p>
-      <a href="https://github.com/zafchiel" target="_blank"
-        ><span class="primary_color">Github</span></a
-      >
-    </p>
-  </div>
+  <p>
+    If you have any questions, feel free to contact me at <span
+      class="primary_color">example@mail.com</span
+    >.
+  </p>
+  <a href="https://github.com/zafchiel" target="_blank">
+    <img src={githubIcon} alt="github logo" />
+    <span>My github</span>
+  </a>
 </section>
 
 <style>
@@ -25,10 +23,17 @@
   }
 
   p {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
   }
 
   .primary_color {
+    color: var(--color-primary);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: var(--color-primary);
   }
 </style>
