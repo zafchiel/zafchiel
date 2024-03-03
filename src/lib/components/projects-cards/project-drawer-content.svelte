@@ -5,7 +5,7 @@
   export let project: ProjectInfo;
 </script>
 
-<section class="wrapper">
+<section>
   <header>
     <h3>{project.title}</h3>
     <div class="links">
@@ -14,16 +14,26 @@
     </div>
   </header>
 
-  {#if project.title === "Flashcards"}
-    <Flashcards />
-  {:else if project.title === "Link shortener"}
-    <LinkShortener />
-  {/if}
+  <div class="project_details">
+    {#if project.title === "Flashcards"}
+      <Flashcards />
+    {:else if project.title === "Link shortener"}
+      <LinkShortener />
+    {/if}
+  </div>
 </section>
 
 <style>
   section {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+
+    & .project_details {
+      overflow-y: auto;
+      padding: 0.5rem;
+    }
 
     & header {
       display: flex;
@@ -31,6 +41,8 @@
       gap: 1rem;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.2);
+      padding: 0.5rem;
 
       & h3 {
         font-weight: 700;

@@ -14,10 +14,8 @@
   </Drawer.Trigger>
   <Drawer.Portal>
     <Drawer.Content class="drawer_content">
-      <div class="drawer_content_warper">
-        <slot name="content" />
-        <Drawer.Close autofocus>Close</Drawer.Close>
-      </div>
+      <slot name="content" />
+      <Drawer.Close autofocus>Close</Drawer.Close>
     </Drawer.Content>
   </Drawer.Portal>
 </Drawer.Root>
@@ -34,16 +32,8 @@
     display: flex;
     flex-direction: column;
     border-radius: 0 10px 10px 0;
-    padding: 1rem;
     background-color: var(--color-base-850);
     box-shadow: 6px 0px 10px 0px rgba(30, 41, 36, 0.603);
-  }
-
-  .drawer_content_warper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 1rem;
   }
 
   :global([data-dialog-trigger]) {
@@ -96,6 +86,7 @@
     border: 2px var(--color-primary-faded-text) solid;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 1rem;
   }
 
   @media (width < 480px) {
