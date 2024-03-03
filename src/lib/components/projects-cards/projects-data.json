@@ -6,8 +6,8 @@
             "image": "/projects/flashcards.webp",
             "bigImage": "./images/flashcards.webp",
             "stack": ["TypeScript", "SvelteKit", "PostgreSQL"],
-            "repoLink": "https://github.com/zafchiel",
-            "liveLink": "https://flashcards.zafchiel.com"
+            "repoLink": "https://github.com/zafchiel/flashcards",
+            "liveLink": "https://misiunya.fun"
         },
         {
             "title": "Link shortener",
@@ -17,7 +17,7 @@
             "bigImage": "./images/flashcards.webp",
 
             "stack": ["TypeScript", "React", "Redis"],
-            "repoLink": "https://github.com/zafchiel",
-            "liveLink": "https://flashcards.zafchiel.com"
+            "repoLink": "https://github.com/zafchiel/short-link",
+            "liveLink": "https://sq.misiunya.fun/"
         }
 ]
