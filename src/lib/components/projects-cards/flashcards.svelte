@@ -1,12 +1,13 @@
 <script lang="ts">
-  import imageSrc from "./images/flashcards.webp?enhanced";
+  import imageSrc1 from "./images/flashcards-1.webp?enhanced";
+  import imageSrc2 from "./images/flashcards-2.webp?enhanced";
+  import imageSrc3 from "./images/flashcards-3.webp?enhanced";
 </script>
 
 <div class="gallery">
-  <enhanced:img src={imageSrc} alt="Flashcards preview screenshot" />
-  <enhanced:img src={imageSrc} alt="Flashcards preview screenshot" />
-  <enhanced:img src={imageSrc} alt="Flashcards preview screenshot" />
-  <enhanced:img src={imageSrc} alt="Flashcards preview screenshot" />
+  <enhanced:img src={imageSrc2} alt="Flashcards preview screenshot" />
+  <enhanced:img src={imageSrc1} alt="Flashcards preview screenshot" />
+  <enhanced:img src={imageSrc3} alt="Flashcards preview screenshot" />
 </div>
 
 <p>
@@ -28,22 +29,33 @@
 <style>
   .gallery {
     display: flex;
+    flex-direction: row;
     gap: 0.5rem;
-    height: 500px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1.5rem;
 
-    & img {
+    & picture,
+    img {
       flex: 1;
       height: 100%;
       object-fit: cover;
-    }
+      transition: all 0.8s ease;
 
-    & img:hover {
-      flex: 5;
-      border: 1px solid var(--color-primary);
+      &:hover {
+        flex: 10;
+      }
     }
   }
 
   p {
     margin-bottom: 1rem;
+  }
+
+  @media (width < 800px) {
+    .gallery {
+      flex-direction: column;
+      height: auto;
+    }
   }
 </style>

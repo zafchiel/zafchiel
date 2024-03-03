@@ -26,9 +26,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    min-width: 40vw;
-    max-width: 50vw;
-    /* width: 80vw; */
+    width: min(80vw, 61ch);
     display: flex;
     flex-direction: column;
     border-radius: 0 10px 10px 0;
