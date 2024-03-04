@@ -2,6 +2,8 @@
   import type { ProjectInfo } from "$lib/types";
   import Flashcards from "./flashcards.svelte";
   import LinkShortener from "./link-shortener.svelte";
+  import linkIcon from "$lib/assets/link-icon.svg";
+
   export let project: ProjectInfo;
 </script>
 
@@ -9,8 +11,15 @@
   <header>
     <h3>{project.title}</h3>
     <div class="links">
-      <a href={project.repoLink}>Repository link</a>
-      <a href={project.liveLink}>Live deployment link</a>
+      <a href={project.repoLink}>
+        <img src={linkIcon} alt="Link icon" />
+        Repository
+      </a>
+      <a href={project.liveLink}>
+        <img src={linkIcon} alt="Link icon" />
+
+        Live deployment</a
+      >
     </div>
   </header>
 
@@ -53,13 +62,13 @@
       & .links {
         display: flex;
         flex-direction: column;
-        color: var(--color-primary-faded-text);
-      }
-    }
+        /* color: var(--color-primary-faded-text); */
 
-    & img {
-      margin-top: 1rem;
-      border-radius: var(--border-radius-sm);
+        & a {
+          display: flex;
+          gap: 0.3rem;
+        }
+      }
     }
   }
 </style>
