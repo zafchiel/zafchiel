@@ -9,16 +9,46 @@
 </div>
 
 <p>
-  Link shortener is simple aplication to shorten links and creating QR codes.
+  Link shortener is a simple application for <span class="bold"
+    >shortening links</span
+  >
+  and <span class="bold">creating QR</span>
+  codes. Shortened links are <span class="bold">automatically copied</span> to the
+  clipboard for your convenience.
 </p>
 <p>
-  It is possible to download your code as a PNG file in three formats (200x200,
-  400x400 and 600x600).
+  You can <span class="bold">download</span> your QR code as a
+  <span class="bold">PNG file</span> in three sizes: 200x200, 400x400, and 600x600.
 </p>
-<p>
-  Shortened link is automatically copied to the clipboard for convinience of
-  user.
-</p>
+
+<p class="bold">Technologies I used:</p>
+<ul>
+  <li>
+    <div>
+      <a href="https://react.dev/" target="_blank" class="mark bold">React</a>
+      with
+      <a href="https://nextjs.org/" target="_blank" class="mark bold">NextJS</a>
+      - fast meta framework on top of React
+    </div>
+  </li>
+  <li>
+    <div>
+      <a href="https://redis.io/" target="_blank" class="mark bold">Redis</a> - blazingly
+      fast in-memory database
+    </div>
+  </li>
+  <li>
+    <div>
+      <a href="https://tailwindcss.com/" target="_blank" class="mark bold"
+        >TailwindCSS</a
+      >
+      with
+      <a href="https://ui.shadcn.com/" target="_blank" class="mark bold"
+        >shadcnUI</a
+      > - fast and efficient way to go about styling
+    </div>
+  </li>
+</ul>
 
 <style>
   .gallery {
@@ -44,6 +74,39 @@
 
   p {
     margin-bottom: 1rem;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .mark {
+    color: var(--color-primary);
+  }
+
+  ul {
+    list-style: none;
+
+    & li {
+      margin: 1rem 0;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    & li::before {
+      content: "";
+      background: url("/list-triangle.svg") no-repeat;
+      background-size: cover;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+    }
+
+    & span {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
   }
 
   @media (width < 800px) {

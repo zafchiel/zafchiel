@@ -17,14 +17,9 @@
   Flashcards is a web application that allows users to <span class="bold"
     >create</span
   >, <span class="bold">edit</span>, and <span class="bold">delete</span>
-  flashcards. Users can also create and delete <span class="bold">decks</span> of
-  flashcards.
-</p>
-<p>
-  It is possible to <span class="bold">share</span> your flashcards decks with
-  other users and <span class="bold">search</span> for decks that are marked as
-  public. It is possible to <span class="bold">copy</span> a deck to your list with
-  one click.
+  flashcards and decks of flashcards. Users can <span class="bold">share</span>
+  their decks with others and <span class="bold">search</span> for public decks.
+  With a single click, users can add a public deck to their collection.
 </p>
 <p class="bold">Technologies I used:</p>
 <ul>
@@ -38,7 +33,7 @@
         href="https://www.typescriptlang.org/"
         target="_blank"
         class="mark bold">TypeScript</a
-      > - solid fullstack framework with excelent developer expirience
+      > - solid fullstack framework with excelent developer experience
     </div>
   </li>
   <li>
@@ -49,7 +44,7 @@
       with
       <a href="https://orm.drizzle.team/" target="_blank" class="mark bold"
         >drizzleORM</a
-      > - battle tested database with typesafe SQL-like ORM
+      > - battle-tested database with typesafe SQL-like ORM
     </div>
   </li>
   <li>
@@ -64,9 +59,11 @@
     </div>
   </li>
   <li>
-    <a href="https://lucia-auth.com/" target="_blank" class="mark bold"
-      >LuciaAuth</a
-    > - utilities making authorization a breze
+    <div>
+      <a href="https://lucia-auth.com/" target="_blank" class="mark bold"
+        >LuciaAuth</a
+      > - utilities making authorization a breze
+    </div>
   </li>
 </ul>
 
@@ -99,6 +96,8 @@
 
   p {
     margin-bottom: 1rem;
+    z-index: 2;
+    user-select: text;
   }
 
   .bold {
