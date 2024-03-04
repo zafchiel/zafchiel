@@ -45,7 +45,7 @@
       with
       <a href="https://ui.shadcn.com/" target="_blank" class="mark bold"
         >shadcnUI</a
-      > - fast and efficient way to go about styling
+      > - efficient way to go about styling
     </div>
   </li>
 </ul>

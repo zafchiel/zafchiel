@@ -96,8 +96,6 @@
 
   p {
     margin-bottom: 1rem;
-    z-index: 2;
-    user-select: text;
   }
 
   .bold {

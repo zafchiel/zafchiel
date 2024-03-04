@@ -35,6 +35,7 @@
     inset: 0;
     object-fit: cover;
     max-width: 100%;
+    height: 100%;
     z-index: -1;
   }
 
