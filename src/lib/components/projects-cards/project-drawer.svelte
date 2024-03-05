@@ -81,7 +81,6 @@
     padding: 0.5rem;
     border-radius: var(--border-radius-sm);
     cursor: pointer;
-    /* background-image: url("../../assets/dot.svg"); */
     background-color: rgba(178, 255, 214, 0.1);
     border: 1px var(--color-primary-faded-text) solid;
     font-weight: 600;
@@ -91,11 +90,21 @@
     overflow: hidden;
 
     &:hover {
-      background-color: var(--color-primary-faded-text);
-      color: var(--color-base-850);
+      &::before {
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: radial-gradient(
+          circle,
+          rgba(178, 255, 214, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        opacity: 0.3;
+      }
     }
 
     &::before {
+      transition: 0.3s ease;
       content: "";
       position: absolute;
       width: 5rem;
@@ -107,6 +116,8 @@
       );
       opacity: 0.2;
       top: -50%;
+      left: 50%;
+      right: 50%;
     }
   }
 

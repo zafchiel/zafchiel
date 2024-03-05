@@ -52,7 +52,7 @@
       align-items: center;
       border-bottom: 1px solid var(--color-primary-faded-text);
       box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.2);
-      padding: 0.5rem;
+      padding: 1rem;
       z-index: 2;
 
       & h3 {
@@ -62,7 +62,6 @@
       & .links {
         display: flex;
         flex-direction: column;
-        /* color: var(--color-primary-faded-text); */
 
         & a {
           display: flex;
