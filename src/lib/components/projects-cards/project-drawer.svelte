@@ -77,19 +77,36 @@
   }
 
   :global([data-dialog-close]) {
+    position: relative;
     padding: 0.5rem;
     border-radius: var(--border-radius-sm);
     cursor: pointer;
-    background-color: transparent;
-    border: 2px var(--color-primary-faded-text) solid;
+    /* background-image: url("../../assets/dot.svg"); */
+    background-color: rgba(178, 255, 214, 0.1);
+    border: 1px var(--color-primary-faded-text) solid;
     font-weight: 600;
     text-transform: uppercase;
     margin: 1rem;
     transition: 0.3s ease;
+    overflow: hidden;
 
     &:hover {
       background-color: var(--color-primary-faded-text);
       color: var(--color-base-850);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      background: radial-gradient(
+        circle,
+        rgba(178, 255, 214, 1) 0%,
+        rgba(0, 0, 0, 0) 50%
+      );
+      opacity: 0.2;
+      top: -50%;
     }
   }
 
