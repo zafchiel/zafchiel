@@ -11,6 +11,7 @@
       <ProjectCard {index} {project} />
     {/each}
   </div>
+  <p>Working on more, stay tuned!</p>
 </section>
 
 <style>
@@ -25,5 +26,11 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  p {
+    font-size: var(--fs-md);
+    margin-top: 1rem;
+    font-weight: 300;
   }
 </style>
