@@ -7,7 +7,7 @@
   <h2>Contact</h2>
   <p>
     If you have any questions, feel free to contact me at <span
-      class="primary_color">example@mail.com</span
+      class="primary_color">j.krason@proton.me</span
     >.
   </p>
   <a href="https://github.com/zafchiel" target="_blank">

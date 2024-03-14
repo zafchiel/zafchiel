@@ -26,7 +26,7 @@
       >
     </nav>
     <div class="contact_info" class:hidden={!$expanded}>
-      <p>example@mail.com</p>
+      <p>j.krason@proton.me</p>
       <a href="https://github.com/zafchiel" target="_blank">Github</a>
     </div>
   </div>
