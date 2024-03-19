@@ -4,8 +4,16 @@
 </script>
 
 <div class="gallery">
-  <enhanced:img src={imageSrc2} alt="Flashcards preview screenshot" />
-  <enhanced:img src={imageSrc1} alt="Flashcards preview screenshot" />
+  <enhanced:img
+    src={imageSrc2}
+    alt="Flashcards preview screenshot"
+    class="left_image"
+  />
+  <enhanced:img
+    src={imageSrc1}
+    alt="Flashcards preview screenshot"
+    class="right_image"
+  />
 </div>
 
 <p>
@@ -58,6 +66,14 @@
     width: 100%;
     height: 300px;
     margin-bottom: 1.5rem;
+
+    & .left_image {
+      border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+    }
+
+    & .right_image {
+      border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    }
 
     & picture,
     img {
