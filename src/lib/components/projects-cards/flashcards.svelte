@@ -19,53 +19,53 @@
 </div>
 
 <p>
-  Flashcards is a web application that allows users to <span class="bold"
-    >create</span
-  >, <span class="bold">edit</span>, and <span class="bold">delete</span>
-  flashcards and decks of flashcards. Users can <span class="bold">share</span>
-  their decks with others and <span class="bold">search</span> for public decks.
-  With a single click, users can add a public deck to their collection.
+  Flashcards is a web application that allows users to <b>create</b>,
+  <b>edit</b>, and <b>delete</b>
+  flashcards and decks of flashcards.
+</p>
+<p>
+  Users can <b>share</b>
+  their decks with others and <b>search</b> for public decks. With a single click,
+  users can add a public deck to their collection.
 </p>
 <p class="bold">Technologies I used:</p>
 <ul>
   <li>
     <div>
-      <a href="https://kit.svelte.dev/" target="_blank" class="mark bold"
+      <a href="https://kit.svelte.dev/" target="_blank" class="mark"
         >SvelteKit</a
       >
       with
-      <a
-        href="https://www.typescriptlang.org/"
-        target="_blank"
-        class="mark bold">TypeScript</a
+      <a href="https://www.typescriptlang.org/" target="_blank" class="mark"
+        >TypeScript</a
       > - solid fullstack framework with excelent developer experience
     </div>
   </li>
   <li>
     <div>
-      <a href="https://www.postgresql.org/" target="_blank" class="mark bold"
+      <a href="https://www.postgresql.org/" target="_blank" class="mark"
         >PostgreSQL</a
       >
       with
-      <a href="https://orm.drizzle.team/" target="_blank" class="mark bold"
+      <a href="https://orm.drizzle.team/" target="_blank" class="mark"
         >drizzleORM</a
       > - battle-tested database with typesafe SQL-like ORM
     </div>
   </li>
   <li>
     <div>
-      <a href="https://tailwindcss.com/" target="_blank" class="mark bold"
+      <a href="https://tailwindcss.com/" target="_blank" class="mark"
         >TailwindCSS</a
       >
       with
-      <a href="https://www.skeleton.dev/" target="_blank" class="mark bold"
+      <a href="https://www.skeleton.dev/" target="_blank" class="mark"
         >Skeleton</a
       > - fast and efficient way to go about styling
     </div>
   </li>
   <li>
     <div>
-      <a href="https://lucia-auth.com/" target="_blank" class="mark bold"
+      <a href="https://lucia-auth.com/" target="_blank" class="mark"
         >LuciaAuth</a
       > - utilities making authorization a breze
     </div>
@@ -111,12 +111,9 @@
     margin-bottom: 1rem;
   }
 
-  .bold {
-    font-weight: bold;
-  }
-
   .mark {
     color: var(--color-primary);
+    font-weight: bold;
   }
 
   ul {

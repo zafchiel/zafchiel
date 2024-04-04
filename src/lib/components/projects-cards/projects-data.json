@@ -19,5 +19,16 @@
             "stack": ["TypeScript", "React", "Redis"],
             "repoLink": "https://github.com/zafchiel/short-link",
             "liveLink": "https://sq.misiunya.fun/"
+        },
+        {
+            "title": "Drawing Board",
+            "description":
+                "Build from scratch, allows wireframing and drawing. It is built with TypeScript and React.",
+            "image": "/projects/draw-board.webp",
+            "bigImage": "./images/flashcards.webp",
+
+            "stack": ["TypeScript", "React"],
+            "repoLink": "https://github.com/zafchiel/draw-board",
+            "liveLink": "https://draw-board.pages.dev/"
         }
 ]

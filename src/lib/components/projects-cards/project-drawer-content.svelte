@@ -3,6 +3,7 @@
   import Flashcards from "./flashcards.svelte";
   import LinkShortener from "./link-shortener.svelte";
   import linkIcon from "$lib/assets/link-icon.svg";
+  import DrawBoard from "./draw-board.svelte";
 
   export let project: ProjectInfo;
 </script>
@@ -28,6 +29,8 @@
       <Flashcards />
     {:else if project.title === "Link shortener"}
       <LinkShortener />
+    {:else if project.title === "Drawing Board"}
+      <DrawBoard />
     {/if}
   </div>
 </section>

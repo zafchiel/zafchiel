@@ -1,6 +1,6 @@
 <script lang="ts">
-  import imageSrc1 from "./images/link-shortener-1.webp?enhanced";
-  import imageSrc2 from "./images/link-shortener-2.webp?enhanced";
+  import imageSrc1 from "./images/draw-dark.webp?enhanced";
+  import imageSrc2 from "./images/draw-light.webp?enhanced";
 </script>
 
 <div class="gallery">
@@ -17,14 +17,13 @@
 </div>
 
 <p>
-  Link shortener is a simple application for <b>shortening links</b>
-  and <b>creating QR</b>
-  codes. Shortened links are <b>automatically copied</b> to the clipboard for your
-  convenience.
+  Drawing board is a react app for <b>drawing and wireframing</b>. It's build
+  <b>from scratch</b>, without using any libraries to manipualte canvas.
 </p>
 <p>
-  You can <b>download</b> your QR code as a
-  <b>PNG file</b> in three sizes: 200x200, 400x400, and 600x600.
+  It's a simple drawing board, still <b>in development</b>, with a few tools
+  like pen, eraser, and color picker. You can also save your drawing as an
+  image.
 </p>
 
 <p class="bold">Technologies I used:</p>
@@ -33,14 +32,11 @@
     <div>
       <a href="https://react.dev/" target="_blank" class="mark">React</a>
       with
-      <a href="https://nextjs.org/" target="_blank" class="mark">NextJS</a>
-      - fast meta framework on top of React
-    </div>
-  </li>
-  <li>
-    <div>
-      <a href="https://redis.io/" target="_blank" class="mark">Redis</a> - blazingly
-      fast in-memory database
+      <a
+        href="https://www.typescriptlang.org/"
+        target="_blank"
+        class="mark bold">TypeScript</a
+      >
     </div>
   </li>
   <li>
