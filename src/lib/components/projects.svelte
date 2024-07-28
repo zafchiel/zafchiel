@@ -11,7 +11,7 @@
       <ProjectCard {index} {project} />
     {/each}
   </div>
-  <p>Working on more, stay tuned!</p>
+  <p><i>Working on more, stay tuned!</i></p>
 </section>
 
 <style>
@@ -25,7 +25,7 @@
   .display_projects {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   p {

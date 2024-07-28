@@ -15,8 +15,6 @@ img {
 }
 
 :root {
-  scroll-behavior: smooth;
-
   --color-primary: #b2ffd6;
   --color-secondary: #f9f871;
   --color-tertiary: #f9f9f9;
@@ -74,6 +72,7 @@ img {
 
 html {
   color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 body {

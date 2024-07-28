@@ -48,6 +48,7 @@
 </script>
 
 <header
+  aria-hidden={scrollDirection === "up" ? "false" : "true"}
   class:hidden={!$expanded || $drawerOpenedStore}
   class:header_visible={scrollDirection === "up"}
   class:nav_visible={isNavVisible}

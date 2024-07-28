@@ -31,6 +31,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 1rem;
 
     & .img {
       width: 100px;
