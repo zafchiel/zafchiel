@@ -23,7 +23,7 @@
       <div>
         Possess knowledge of back-end technologies such as <span>Node.js</span>
         and
-        <span>Bun</span>
+        <span>NextJS / Sveltekit</span>
       </div>
     </li>
     <li>

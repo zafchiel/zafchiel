@@ -6,11 +6,12 @@
 <section id="contact" use:intersectionObserverAction>
   <h2>Contact</h2>
   <p>
-    If you have any questions, feel free to contact me at <span
-      class="primary_color">j.krason@proton.me</span
+    If you have any questions, feel free to contact me at <a
+      href="mailto:j.krason@proton.me"
+      class="primary_color">j.krason@proton.me</a
     >.
   </p>
-  <a href="https://github.com/zafchiel" target="_blank">
+  <a href="https://github.com/zafchiel" target="_blank" class="github_link">
     <img src={githubIcon} alt="github logo" />
     <span>My github</span>
   </a>
@@ -30,7 +31,7 @@
     color: var(--color-primary);
   }
 
-  a {
+  .github_link {
     display: flex;
     align-items: center;
     gap: 0.5rem;
