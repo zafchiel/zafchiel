@@ -35,6 +35,7 @@
 
     & .img {
       width: 100px;
+      min-width: 100px;
       height: 100px;
       border-radius: var(--border-radius-md);
     }

@@ -37,14 +37,13 @@
 <style>
   .wrapper {
     display: grid;
-    grid-template-columns: 250px minmax(650px, 760px);
+    grid-template-columns: 250px minmax(650px, 860px);
     gap: 2.5rem;
-    margin: 0 auto;
     padding: 1.5rem;
   }
 
   .push_down {
-    height: 250px;
+    height: 40vh;
   }
 
   @media (max-width: 1024px) {
