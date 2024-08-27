@@ -81,7 +81,7 @@
     padding: 0.5rem;
     border-radius: var(--border-radius-sm);
     cursor: pointer;
-    background-color: rgba(178, 255, 214, 0.1);
+    background-color: rgba(var(--color-primary-faded-text-rgb), 0.3);
     border: 1px var(--color-primary-faded-text) solid;
     font-weight: 600;
     text-transform: uppercase;
@@ -96,7 +96,7 @@
         width: 100%;
         background: radial-gradient(
           circle,
-          rgba(178, 255, 214, 1) 0%,
+          var(--color-primary) 0%,
           rgba(0, 0, 0, 0) 100%
         );
         opacity: 0.3;
@@ -111,7 +111,7 @@
       height: 5rem;
       background: radial-gradient(
         circle,
-        rgba(178, 255, 214, 1) 0%,
+        var(--color-primary) 0%,
         rgba(0, 0, 0, 0) 50%
       );
       opacity: 0.2;

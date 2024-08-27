@@ -15,23 +15,24 @@ img {
 }
 
 :root {
-  --color-primary: #b2ffd6;
-  --color-secondary: #f9f871;
-  --color-tertiary: #f9f9f9;
-  --color-dark: #010513;
-  --color-text: #f8f8f8;
+  --color-primary: #f5e0dc;    /* Rosewater */
+  --color-secondary: #f2cdcd;  /* Flamingo */
+  --color-tertiary: #f5c2e7;   /* Pink */
+  --color-dark: #1e1e2e;       /* Base */
+  --color-text: #cdd6f4;       /* Text */
 
-  --color-faded-text: #f8f8f8b3;
-  --color-primary-faded-text: #b2ffd6b1;
+  --color-faded-text: #bac2de;         /* Subtext0 */
+  --color-primary-faded-text-rgb: 245, 224, 220;
+  --color-primary-faded-text: #f5e0dc; /* Rosewater (same as primary) */
   
-  --color-base-750: #3c3c3c;
-  --color-base-800: #2f2f2f;
-  --color-base-850: #222;
-  --color-base-900: #141414;
-  --color-base-950: #070707;
+  --color-base-750: #45475a; /* Surface0 */
+  --color-base-800: #313244; /* Surface1 */
+  --color-base-850: #1e1e2e; /* Base */
+  --color-base-900: #181825; /* Mantle */
+  --color-base-950: #11111b; /* Crust */
 
-  --border-radius-sm: 0.25rem;
-  --border-radius-md: 0.5rem;
+  --border-radius-sm: 12px;
+  --border-radius-md: 16px;
 }
 
 /* Fluid font size variables, for browsers that support clamp */
