@@ -7,8 +7,7 @@
   <div class="heading">
     <enhanced:img class="img" src="../assets/avatar.png" alt="avatar square" />
     <h3>
-      <a href="https://github.com/zafchiel"><span>Jakub Krasoń</span></a> | Front-End
-      Developer
+      <a href="https://github.com/zafchiel"><span>Jakub Krasoń</span></a> | Web Developer
     </h3>
   </div>
   <p>

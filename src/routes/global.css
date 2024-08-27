@@ -31,8 +31,8 @@ img {
   --color-base-900: #181825; /* Mantle */
   --color-base-950: #11111b; /* Crust */
 
-  --border-radius-sm: 12px;
-  --border-radius-md: 16px;
+  --border-radius-sm: 10px;
+  --border-radius-md: 15px;
 }
 
 /* Fluid font size variables, for browsers that support clamp */
