@@ -101,15 +101,16 @@
       margin: 1rem 0;
       display: flex;
       gap: 0.5rem;
+      align-items: center;
     }
 
     & li::before {
       content: "";
-      background: url("/list-triangle.svg") no-repeat;
-      background-size: cover;
       display: block;
-      width: 1rem;
-      height: 1rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: var(--color-primary);
+      border-radius: 50%;
       flex-shrink: 0;
     }
 
