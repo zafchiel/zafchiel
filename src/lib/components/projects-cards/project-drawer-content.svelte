@@ -5,7 +5,11 @@
   import linkIcon from "$lib/assets/link-icon.svg";
   import DrawBoard from "./draw-board.svelte";
 
-  export let project: ProjectInfo;
+  interface Props {
+    project: ProjectInfo;
+  }
+
+  let { project }: Props = $props();
 </script>
 
 <section>

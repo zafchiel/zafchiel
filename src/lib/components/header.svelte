@@ -7,10 +7,10 @@
 
   const expanded = getExpanded();
 
-  let isNavVisible = false;
-  let navComponent: HTMLElement;
+  let isNavVisible = $state(false);
+  let navComponent: HTMLElement = $state();
 
-  let scrollDirection: "down" | "up" = "down";
+  let scrollDirection: "down" | "up" = $state("down");
   let lastKnownScrollPosition = 0;
 
   onMount(() => {
@@ -69,7 +69,7 @@
   >
     <a
       href="#home"
-      on:click={(e) => {
+      onclick={(e) => {
         e.preventDefault();
         window.scrollTo(0, 0);
         isNavVisible = false;
@@ -77,22 +77,22 @@
     >
     <a
       href="#about"
-      on:click={handleLinkClick}
+      onclick={handleLinkClick}
       class:active={$activeLinkStore === "about"}>About</a
     >
     <a
       href="#tech"
-      on:click={handleLinkClick}
+      onclick={handleLinkClick}
       class:active={$activeLinkStore === "tech"}>Tech</a
     >
     <a
       href="#projects"
-      on:click={handleLinkClick}
+      onclick={handleLinkClick}
       class:active={$activeLinkStore === "projects"}>Projects</a
     >
     <a
       href="#contact"
-      on:click={handleLinkClick}
+      onclick={handleLinkClick}
       class:active={$activeLinkStore === "contact"}>Contact</a
     >
   </nav>

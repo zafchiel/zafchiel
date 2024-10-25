@@ -11,7 +11,7 @@
     <nav class:expanded={$expanded}>
       <a
         href="#home"
-        on:click={(e) => {
+        onclick={(e) => {
           e.preventDefault();
           window.scrollTo(0, 0);
         }}>Home</a

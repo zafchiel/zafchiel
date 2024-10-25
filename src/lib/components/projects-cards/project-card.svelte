@@ -4,29 +4,37 @@
   import ProjectDrawerContent from "./project-drawer-content.svelte";
   import ProjectDrawer from "./project-drawer.svelte";
 
-  export let project: ProjectInfo;
-  export let index: number;
+  interface Props {
+    project: ProjectInfo;
+    index: number;
+  }
+
+  let { project, index }: Props = $props();
 </script>
 
 <ProjectDrawer>
-  <div class="project_card_wrapper" slot="trigger">
-    <img src={project.image} alt={`${project.title} card background`} />
-    <p class="number">{`0${index + 1}`}</p>
-    <div class="stack">
-      <Triangle />
-      {#each project.stack as tech}
-        <p>{tech}</p>
-      {/each}
+  {#snippet trigger()}
+    <div class="project_card_wrapper" >
+      <img src={project.image} alt={`${project.title} card background`} />
+      <p class="number">{`0${index + 1}`}</p>
+      <div class="stack">
+        <Triangle />
+        {#each project.stack as tech}
+          <p>{tech}</p>
+        {/each}
+      </div>
+      <div class="project">
+        <h3>{project.title}</h3>
+        <p class="description">
+          {project.description}
+        </p>
+      </div>
     </div>
-    <div class="project">
-      <h3>{project.title}</h3>
-      <p class="description">
-        {project.description}
-      </p>
-    </div>
-  </div>
+  {/snippet}
 
-  <ProjectDrawerContent {project} slot="content" />
+  {#snippet content()}
+    <ProjectDrawerContent {project}  />
+  {/snippet}
 </ProjectDrawer>
 
 <style>

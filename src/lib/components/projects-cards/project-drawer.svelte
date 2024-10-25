@@ -1,6 +1,12 @@
 <script lang="ts">
   import { Drawer } from "vaul-svelte";
   import { drawerOpenedStore } from "$lib/stores/drawer.store";
+  interface Props {
+    trigger?: import('svelte').Snippet;
+    content?: import('svelte').Snippet;
+  }
+
+  let { trigger, content }: Props = $props();
 </script>
 
 <Drawer.Root
@@ -10,11 +16,11 @@
   }}
 >
   <Drawer.Trigger>
-    <slot name="trigger" />
+    {@render trigger?.()}
   </Drawer.Trigger>
   <Drawer.Portal>
     <Drawer.Content class="drawer_content">
-      <slot name="content" />
+      {@render content?.()}
       <Drawer.Close autofocus>Close</Drawer.Close>
     </Drawer.Content>
   </Drawer.Portal>

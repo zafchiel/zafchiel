@@ -2,7 +2,11 @@
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
-  export let isNavVisible = false;
+  interface Props {
+    isNavVisible?: boolean;
+  }
+
+  let { isNavVisible = $bindable(false) }: Props = $props();
 </script>
 
 <div>
@@ -10,7 +14,7 @@
     type="checkbox"
     id="hamburger-menu"
     bind:checked={isNavVisible}
-    on:change={(e) => dispatch("nav-state", isNavVisible)}
+    onchange={(e) => dispatch("nav-state", isNavVisible)}
   />
 
   <label for="hamburger-menu">

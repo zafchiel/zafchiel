@@ -25,7 +25,7 @@
   };
 </script>
 
-<svelte:document on:scroll={handleScroll} />
+<svelte:document onscroll={handleScroll} />
 
 <Header />
 <div class="push_down"></div>
