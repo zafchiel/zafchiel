@@ -21,11 +21,17 @@
     <p class="description">{project.metadata.description}</p>
   </button>
   {#if isOpen}
-    <div class="content">
-      <project.content />
-    </div>
+    <project.content />
   {/if}
 </article>
 
 <style>
+  button {
+    border-radius: 0.5rem;
+    background-color: hsla(255, 100%, 100%, 0.1);
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
 </style>

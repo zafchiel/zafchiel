@@ -30,9 +30,4 @@
     padding: 1rem;
     background: url("../assets/dot.svg");
   }
-
-  .display_projects {
-    display: grid;
-    gap: 2rem;
-  }
 </style>
