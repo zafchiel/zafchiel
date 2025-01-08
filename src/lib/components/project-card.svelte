@@ -28,7 +28,4 @@
 </article>
 
 <style>
-  .content {
-    color: red;
-  }
 </style>

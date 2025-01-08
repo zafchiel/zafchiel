@@ -6,7 +6,13 @@ import { mdsvex } from "mdsvex";
 const config = {
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
-  preprocess: [vitePreprocess(), mdsvex({ extensions: [".md"] })],
+  preprocess: [
+    vitePreprocess(),
+    mdsvex({
+      extensions: [".md"],
+      layout: "src/lib/components/project-content-layout.svelte",
+    }),
+  ],
   extensions: [".svelte", ".md"],
   kit: {
     adapter: adapter({
