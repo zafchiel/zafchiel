@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { activeLinkStore } from "$lib/stores/active-link-store";
+  import { store } from "$lib/stores/global-store.svelte";
   import { expanded } from "$lib/stores/expaded-store.svelte";
   import { onMount } from "svelte";
   import HamburgerMenu from "./hamburger-menu.svelte";
@@ -76,22 +76,22 @@
     <a
       href="#about"
       onclick={handleLinkClick}
-      class:active={$activeLinkStore === "about"}>About</a
+      class:active={store.activeLink === "about"}>About</a
     >
     <a
       href="#tech"
       onclick={handleLinkClick}
-      class:active={$activeLinkStore === "tech"}>Tech</a
+      class:active={store.activeLink === "tech"}>Tech</a
     >
     <a
       href="#projects"
       onclick={handleLinkClick}
-      class:active={$activeLinkStore === "projects"}>Projects</a
+      class:active={store.activeLink === "projects"}>Projects</a
     >
     <a
       href="#contact"
       onclick={handleLinkClick}
-      class:active={$activeLinkStore === "contact"}>Contact</a
+      class:active={store.activeLink === "contact"}>Contact</a
     >
   </nav>
 </header>

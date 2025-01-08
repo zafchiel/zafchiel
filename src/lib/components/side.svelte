@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { activeLinkStore } from "$lib/stores/active-link-store";
+  import { store } from "$lib/stores/global-store.svelte";
   import { expanded } from "$lib/stores/expaded-store.svelte";
 </script>
 
@@ -14,12 +14,12 @@
           window.scrollTo(0, 0);
         }}>Home</a
       >
-      <a href="#about" class:active={$activeLinkStore === "about"}>About</a>
-      <a href="#tech" class:active={$activeLinkStore === "tech"}>Tech</a>
-      <a href="#projects" class:active={$activeLinkStore === "projects"}
+      <a href="#about" class:active={store.activeLink === "about"}>About</a>
+      <a href="#tech" class:active={store.activeLink === "tech"}>Tech</a>
+      <a href="#projects" class:active={store.activeLink === "projects"}
         >Projects</a
       >
-      <a href="#contact" class:active={$activeLinkStore === "contact"}
+      <a href="#contact" class:active={store.activeLink === "contact"}
         >Contact</a
       >
     </nav>
