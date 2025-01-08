@@ -13,32 +13,28 @@
 </div>
 
 <style>
+  .project_layout {
+    padding: 1rem;
+  }
+
   .gallery {
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
-    width: 100%;
     height: 300px;
     margin-bottom: 1.5rem;
-
-    & img {
-      flex: 1;
-      height: 100%;
-      object-fit: cover;
-      transition: all 0.8s ease;
-
-      &:hover {
-        flex: 10;
-      }
-    }
   }
-  @media (width < 800px) {
-    .gallery {
-      flex-direction: column;
-      height: auto;
+
+  .gallery_image {
+    max-width: 100%;
+    object-fit: cover;
+    min-width: 0;
+
+    &:first-of-type {
+      border-radius: 1rem 0 0 1rem;
     }
-  }
-  .project_layout {
-    padding: 2rem;
+
+    &:last-of-type {
+      border-radius: 0 1rem 1rem 0;
+    }
   }
 </style>
