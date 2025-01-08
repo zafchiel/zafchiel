@@ -1,5 +1,4 @@
 <script>
-  import { setExpandedContext } from "$lib/stores/expaded-store";
   import "./global.css";
   /**
    * @typedef {Object} Props
@@ -8,8 +7,6 @@
 
   /** @type {Props} */
   let { children } = $props();
-
-  setExpandedContext();
 </script>
 
 {@render children?.()}

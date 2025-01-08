@@ -1,14 +1,12 @@
 <script lang="ts">
   import { activeLinkStore } from "$lib/stores/active-link-store";
-  import { getExpanded } from "$lib/stores/expaded-store";
-
-  const expanded = getExpanded();
+  import { expanded } from "$lib/stores/expaded-store.svelte";
 </script>
 
 <section>
   <div class="holder">
-    <h3 class:hidden={!$expanded}>Menu</h3>
-    <nav class:expanded={$expanded}>
+    <h3 class={{ hidden: !expanded.value }}>Menu</h3>
+    <nav class={{ expanded: expanded.value }}>
       <a
         href="#home"
         onclick={(e) => {
@@ -25,7 +23,7 @@
         >Contact</a
       >
     </nav>
-    <div class="contact_info" class:hidden={!$expanded}>
+    <div class={[!expanded.value && "hidden", "contact_info"]}>
       <a href="mailto:j.krason@proton.me">j.krason@proton.me</a>
       <a href="https://github.com/zafchiel" target="_blank">Github</a>
     </div>

@@ -2,24 +2,18 @@
   import Header from "$lib/components/header.svelte";
   import Main from "$lib/components/main.svelte";
   import Side from "$lib/components/side.svelte";
-  import { getExpanded } from "$lib/stores/expaded-store";
-  import { drawerOpenedStore } from "$lib/stores/drawer.store";
+  import { expanded } from "$lib/stores/expaded-store.svelte";
 
-  let expanded = getExpanded();
   let scrolledOver100 = false;
 
   const handleScroll = () => {
     const scrollPosition =
       document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollPosition >= 100 && !scrolledOver100) {
-      expanded.set(true);
+      expanded.value = true;
       scrolledOver100 = true;
-    } else if (
-      scrollPosition < 100 &&
-      scrolledOver100 &&
-      $drawerOpenedStore === false
-    ) {
-      expanded.set(false);
+    } else if (scrollPosition < 100 && scrolledOver100) {
+      expanded.value = false;
       scrolledOver100 = false;
     }
   };

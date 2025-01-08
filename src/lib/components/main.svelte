@@ -1,19 +1,17 @@
 <script>
   import Plot from "$lib/components/plot.svelte";
-  import { getExpanded } from "$lib/stores/expaded-store";
   import About from "./about.svelte";
   import Contact from "./contact.svelte";
   import Home from "./home.svelte";
   import Projects from "./projects.svelte";
   import Tech from "./tech.svelte";
-
-  const expanded = getExpanded();
+  import { expanded } from "$lib/stores/expaded-store.svelte";
 </script>
 
 <main>
   <Plot />
   <Home />
-  <div class:hidden={!$expanded}>
+  <div class={{ hidden: !expanded.value }}>
     <About />
     <Tech />
     <Projects />

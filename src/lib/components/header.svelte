@@ -1,14 +1,11 @@
 <script lang="ts">
   import { activeLinkStore } from "$lib/stores/active-link-store";
-  import { getExpanded } from "$lib/stores/expaded-store";
+  import { expanded } from "$lib/stores/expaded-store.svelte";
   import { onMount } from "svelte";
   import HamburgerMenu from "./hamburger-menu.svelte";
-  import { drawerOpenedStore } from "$lib/stores/drawer.store";
-
-  const expanded = getExpanded();
 
   let isNavVisible = $state(false);
-  let navComponent: HTMLElement = $state();
+  let navComponent: HTMLElement | undefined;
 
   let scrollDirection: "down" | "up" = $state("down");
   let lastKnownScrollPosition = 0;
@@ -43,27 +40,28 @@
 
   const handleLinkClick = () => {
     isNavVisible = false;
-    navComponent.setAttribute("aria-hidden", "true");
+    navComponent?.setAttribute("aria-hidden", "true");
   };
+
+  function toggleMobileNav(state: boolean) {
+    isNavVisible = state;
+    navComponent?.setAttribute("aria-hidden", state.toString());
+  }
 </script>
 
 <header
   aria-hidden={scrollDirection === "up" ? "false" : "true"}
-  class:hidden={!$expanded || $drawerOpenedStore}
-  class:header_visible={scrollDirection === "up"}
-  class:nav_visible={isNavVisible}
+  class={{
+    hidden: !expanded.value,
+    header_visible: scrollDirection === "up",
+    nav_visible: isNavVisible,
+  }}
 >
   <h3>Zafchiel</h3>
-  <HamburgerMenu
-    {isNavVisible}
-    on:nav-state={(e) => {
-      isNavVisible = e.detail;
-      navComponent.setAttribute("aria-hidden", (!e.detail).toString());
-    }}
-  />
+  <HamburgerMenu toggleNav={toggleMobileNav} />
 
   <nav
-    class:nav_visible={isNavVisible}
+    class={{ nav_visible: isNavVisible }}
     bind:this={navComponent}
     aria-hidden="true"
   >

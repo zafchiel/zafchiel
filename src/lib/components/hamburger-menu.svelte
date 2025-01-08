@@ -1,20 +1,18 @@
 <script lang="ts">
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
-
   interface Props {
-    isNavVisible?: boolean;
+    toggleNav: (state: boolean) => void;
   }
 
-  let { isNavVisible = $bindable(false) }: Props = $props();
+  let { toggleNav }: Props = $props();
 </script>
 
 <div>
   <input
     type="checkbox"
     id="hamburger-menu"
-    bind:checked={isNavVisible}
-    onchange={(e) => dispatch("nav-state", isNavVisible)}
+    onchange={(e) => {
+      toggleNav((e.target as HTMLInputElement).checked);
+    }}
   />
 
   <label for="hamburger-menu">
