@@ -1,14 +1,23 @@
 <script lang="ts">
   import { intersectionObserverAction } from "$lib/utils/intersection-observer";
-  import projectsData from "./projects-cards/projects-data.json";
-  import ProjectCard from "./projects-cards/project-card.svelte";
+  import ProjectCard from "./project-card.svelte";
+  const projects = import.meta.glob("$lib/projects/*.md", { eager: true });
+
+  // Convert projects object to array and extract both metadata and content
+  const projectsList = Object.entries(projects).map(
+    ([path, project]: [string, any]) => ({
+      path,
+      metadata: project.metadata,
+      content: project.default,
+    })
+  );
 </script>
 
 <section id="projects" use:intersectionObserverAction>
   <h2>Projects</h2>
   <div class="display_projects">
-    {#each projectsData as project, index}
-      <ProjectCard {index} {project} />
+    {#each projectsList as project}
+      <ProjectCard {project} />
     {/each}
   </div>
   <p><i>Working on more, stay tuned!</i></p>
@@ -23,14 +32,7 @@
   }
 
   .display_projects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 2rem;
-  }
-
-  p {
-    font-size: var(--fs-md);
-    margin-top: 1rem;
-    font-weight: 300;
   }
 </style>
