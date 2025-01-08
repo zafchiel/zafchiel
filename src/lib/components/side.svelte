@@ -1,12 +1,11 @@
 <script lang="ts">
   import { store } from "$lib/stores/global-store.svelte";
-  import { expanded } from "$lib/stores/expaded-store.svelte";
 </script>
 
 <section>
   <div class="holder">
-    <h3 class={{ hidden: !expanded.value }}>Menu</h3>
-    <nav class={{ expanded: expanded.value }}>
+    <h3 class={{ hidden: !store.expanded }}>Menu</h3>
+    <nav class={{ expanded: store.expanded }}>
       <a
         href="#home"
         onclick={(e) => {
@@ -23,7 +22,7 @@
         >Contact</a
       >
     </nav>
-    <div class={[!expanded.value && "hidden", "contact_info"]}>
+    <div class={[!store.expanded && "hidden", "contact_info"]}>
       <a href="mailto:j.krason@proton.me">j.krason@proton.me</a>
       <a href="https://github.com/zafchiel" target="_blank">Github</a>
     </div>

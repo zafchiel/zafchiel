@@ -1,6 +1,5 @@
 <script lang="ts">
   import { store } from "$lib/stores/global-store.svelte";
-  import { expanded } from "$lib/stores/expaded-store.svelte";
   import { onMount } from "svelte";
   import HamburgerMenu from "./hamburger-menu.svelte";
 
@@ -52,7 +51,7 @@
 <header
   aria-hidden={scrollDirection === "up" ? "false" : "true"}
   class={{
-    hidden: !expanded.value,
+    hidden: !store.expanded,
     header_visible: scrollDirection === "up",
     nav_visible: isNavVisible,
   }}

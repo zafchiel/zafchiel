@@ -5,13 +5,13 @@
   import Home from "./home.svelte";
   import Projects from "./projects.svelte";
   import Tech from "./tech.svelte";
-  import { expanded } from "$lib/stores/expaded-store.svelte";
+  import { store } from "$lib/stores/global-store.svelte";
 </script>
 
 <main>
   <Plot />
   <Home />
-  <div class={{ hidden: !expanded.value }}>
+  <div class={{ hidden: !store.expanded }}>
     <About />
     <Tech />
     <Projects />

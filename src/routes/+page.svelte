@@ -2,7 +2,7 @@
   import Header from "$lib/components/header.svelte";
   import Main from "$lib/components/main.svelte";
   import Side from "$lib/components/side.svelte";
-  import { expanded } from "$lib/stores/expaded-store.svelte";
+  import { store } from "$lib/stores/global-store.svelte";
 
   let scrolledOver100 = false;
 
@@ -10,10 +10,10 @@
     const scrollPosition =
       document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollPosition >= 100 && !scrolledOver100) {
-      expanded.value = true;
+      store.expanded = true;
       scrolledOver100 = true;
     } else if (scrollPosition < 100 && scrolledOver100) {
-      expanded.value = false;
+      store.expanded = false;
       scrolledOver100 = false;
     }
   };
