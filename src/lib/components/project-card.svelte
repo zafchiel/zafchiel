@@ -24,7 +24,7 @@
   </button>
   <Modal bind:showModal>
     {#snippet header()}
-      <h3>{project.metadata.title}</h3>
+      <h4>{project.metadata.title}</h4>
       <p class="description">{project.metadata.description}</p>
     {/snippet}
     <project.content />
@@ -39,5 +39,9 @@
     border: none;
     cursor: pointer;
     margin-bottom: 1rem;
+  }
+  .description {
+    font-size: 0.8rem;
+    color: var(--color-faded-text);
   }
 </style>

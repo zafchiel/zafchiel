@@ -27,14 +27,16 @@
     {@render children?.()}
     <hr />
     <!-- svelte-ignore a11y_autofocus -->
-    <button autofocus onclick={() => dialog?.close()}>close modal</button>
+    <button autofocus onclick={() => dialog?.close()} aria-label="close modal"
+      >close</button
+    >
   </div>
 </dialog>
 
 <style>
   dialog {
-    max-width: 32em;
-    border-radius: 0.2em;
+    max-width: 32rem;
+    border-radius: 0.2rem;
     border: none;
     padding: 0;
     margin: 0 auto;
@@ -70,8 +72,18 @@
       opacity: 1;
     }
   }
+  hr {
+    margin-top: 0.5rem;
+  }
   button {
     display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: hsla(255, 100%, 100%, 0.1);
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
   }
 
   :global(body.modal_open) {
