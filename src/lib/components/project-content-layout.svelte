@@ -1,6 +1,5 @@
 <script lang="ts">
   let { children, images } = $props();
-  console.log(images);
 </script>
 
 <div class="project_layout">

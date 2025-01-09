@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Modal from "./modal.svelte";
+
   type Project = {
     path: string;
     metadata: {
@@ -12,17 +14,21 @@
 
   let { project }: { project: Project } = $props();
 
-  let isOpen = $state(false);
+  let showModal = $state(false);
 </script>
 
 <article>
-  <button onclick={() => (isOpen = !isOpen)}>
+  <button onclick={() => (showModal = !showModal)}>
     <h3>{project.metadata.title}</h3>
     <p class="description">{project.metadata.description}</p>
   </button>
-  {#if isOpen}
+  <Modal bind:showModal>
+    {#snippet header()}
+      <h3>{project.metadata.title}</h3>
+      <p class="description">{project.metadata.description}</p>
+    {/snippet}
     <project.content />
-  {/if}
+  </Modal>
 </article>
 
 <style>
