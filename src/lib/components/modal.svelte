@@ -4,7 +4,12 @@
   let dialog: HTMLDialogElement | undefined = $state();
 
   $effect(() => {
-    if (showModal) dialog?.showModal();
+    if (showModal) {
+      dialog?.showModal();
+      document.body.classList.add("modal_open");
+    } else {
+      document.body.classList.remove("modal_open");
+    }
   });
 </script>
 
@@ -32,6 +37,9 @@
     border-radius: 0.2em;
     border: none;
     padding: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
   }
   dialog::backdrop {
     background: rgba(0, 0, 0, 0.4);
@@ -45,10 +53,10 @@
   }
   @keyframes zoom {
     from {
-      transform: scale(0.95);
+      transform: scale(0.95) translateY(-50%);
     }
     to {
-      transform: scale(1);
+      transform: scale(1) translateY(-50%);
     }
   }
   dialog[open]::backdrop {
@@ -64,5 +72,9 @@
   }
   button {
     display: block;
+  }
+
+  :global(body.modal_open) {
+    overflow: hidden;
   }
 </style>
