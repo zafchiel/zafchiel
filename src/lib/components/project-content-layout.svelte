@@ -27,6 +27,8 @@
     max-width: 100%;
     object-fit: cover;
     min-width: 0;
+    flex: 1;
+    transition: flex 0.3s ease-in-out;
 
     &:first-of-type {
       border-radius: 1rem 0 0 1rem;
@@ -34,6 +36,10 @@
 
     &:last-of-type {
       border-radius: 0 1rem 1rem 0;
+    }
+
+    &:hover {
+      flex: 5;
     }
   }
 </style>
