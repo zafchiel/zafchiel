@@ -22,6 +22,7 @@ It's a simple drawing board, still **in development**, with a few tools like pen
 **Technologies I used:**
 
 - [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/) - as a meta framework
 - [TailwindCSS](https://tailwindcss.com/) with [shadcnUI](https://ui.shadcn.com/) - efficient way to go about styling
 
 <style>

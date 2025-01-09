@@ -41,7 +41,7 @@
     margin-bottom: 1rem;
   }
   .description {
-    font-size: 0.8rem;
+    font-size: var(--fs-sm);
     color: var(--color-faded-text);
   }
 </style>

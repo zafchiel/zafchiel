@@ -1,6 +1,6 @@
 ---
 title: Link Shortener
-description: Link Shortener is a web application that allows users to shorten links and share them with others.
+description: Link Shortener is a web application that allows users to shorten links and create QR codes.
 images:
   - /projects/link-shortener-1.webp
   - /projects/link-shortener-2.webp
