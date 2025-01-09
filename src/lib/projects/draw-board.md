@@ -13,9 +13,20 @@ stack:
 
 Drawing board is a react app for **drawing and wireframing**. It's built **from scratch**, without using any libraries to manipulate canvas.
 
+<br />
+
 It's a simple drawing board, still **in development**, with a few tools like pen, eraser, and color picker. You can also save your drawing as an image.
+
+<br />
 
 **Technologies I used:**
 
 - [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/) with [shadcnUI](https://ui.shadcn.com/) - efficient way to go about styling
+
+<style>
+  a {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+</style>
