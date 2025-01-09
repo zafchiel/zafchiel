@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,16 +17,16 @@ img {
 }
 
 :root {
-  --color-primary: #f5e0dc;    /* Rosewater */
-  --color-secondary: #f2cdcd;  /* Flamingo */
-  --color-tertiary: #f5c2e7;   /* Pink */
-  --color-dark: #1e1e2e;       /* Base */
-  --color-text: #cdd6f4;       /* Text */
+  --color-primary: #f5e0dc; /* Rosewater */
+  --color-secondary: #f2cdcd; /* Flamingo */
+  --color-tertiary: #f5c2e7; /* Pink */
+  --color-dark: #1e1e2e; /* Base */
+  --color-text: #cdd6f4; /* Text */
 
-  --color-faded-text: #bac2de;         /* Subtext0 */
+  --color-faded-text: #bac2de; /* Subtext0 */
   --color-primary-faded-text-rgb: 245, 224, 220;
   --color-primary-faded-text: #f5e0dc; /* Rosewater (same as primary) */
-  
+
   --color-base-750: #45475a; /* Surface0 */
   --color-base-800: #313244; /* Surface1 */
   --color-base-850: #1e1e2e; /* Base */
@@ -39,34 +41,34 @@ img {
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     --fs-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
-		--fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-		--fs-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-		--fs-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
-		--fs-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
-		--fs-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-		--fs-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+    --fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
   }
 }
 /* Fallback variables for browsers that don't support clamp */
 @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     --fs-sm: 0.8rem;
-		--fs-base: 1rem;
-		--fs-md: 1.25rem;
-		--fs-lg: 1.56rem;
-		--fs-xl: 1.95rem;
-		--fs-xxl: 2.44rem;
-		--fs-xxxl: 3.05rem;
+    --fs-base: 1rem;
+    --fs-md: 1.25rem;
+    --fs-lg: 1.56rem;
+    --fs-xl: 1.95rem;
+    --fs-xxl: 2.44rem;
+    --fs-xxxl: 3.05rem;
   }
   @media screen and (min-width: 1280px) {
     :root {
       --fs-sm: 0.89rem;
-			--fs-base: 1.19rem;
-			--fs-md: 1.58rem;
-			--fs-lg: 2.11rem;
-			--fs-xl: 2.81rem;
-			--fs-xxl: 3.75rem;
-			--fs-xxxl: 5rem;
+      --fs-base: 1.19rem;
+      --fs-md: 1.58rem;
+      --fs-lg: 2.11rem;
+      --fs-xl: 2.81rem;
+      --fs-xxl: 3.75rem;
+      --fs-xxxl: 5rem;
     }
   }
 }
@@ -77,9 +79,10 @@ html {
 }
 
 body {
-    background-color: var(--color-base-900);
-    color: var(--color-text);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--color-base-900);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {

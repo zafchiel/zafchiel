@@ -1,12 +1,8 @@
-<script>
+<script lang="ts">
   import "./global.css";
-  /**
-   * @typedef {Object} Props
-   * @property {import('svelte').Snippet} [children]
-   */
+  import type { Snippet } from "svelte";
 
-  /** @type {Props} */
-  let { children } = $props();
+  let { children }: { children: Snippet } = $props();
 </script>
 
 {@render children?.()}
