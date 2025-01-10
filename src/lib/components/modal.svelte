@@ -43,16 +43,20 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
   dialog::backdrop {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(3px);
   }
+
   .modal_content {
     padding: 1em;
   }
+
   dialog[open] {
     animation: zoom 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
+
   @keyframes zoom {
     from {
       transform: scale(0.95) translateY(-50%);
@@ -61,9 +65,11 @@
       transform: scale(1) translateY(-50%);
     }
   }
+
   dialog[open]::backdrop {
     animation: fade 0.2s ease-out;
   }
+
   @keyframes fade {
     from {
       opacity: 0;
@@ -72,18 +78,25 @@
       opacity: 1;
     }
   }
+
   hr {
     margin-top: 0.5rem;
   }
+
   button {
     display: block;
     width: 100%;
     padding: 0.5rem;
     border-radius: 0 0 0.5rem 0.5rem;
-    background-color: hsla(255, 100%, 100%, 0.1);
+    background-color: var(--color-base-850);
     border: none;
     cursor: pointer;
     letter-spacing: 0.05rem;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-base-800);
+    }
   }
 
   :global(body.modal_open) {
