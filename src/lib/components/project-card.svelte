@@ -19,7 +19,7 @@
 
 <article>
   <button onclick={() => (showModal = !showModal)}>
-    <h3>{project.metadata.title}</h3>
+    <h4>{project.metadata.title}</h4>
     <p class="description">{project.metadata.description}</p>
     <div class="stack">
       {#each project.metadata.stack as stack}
@@ -38,16 +38,18 @@
 
 <style>
   button {
-    border-radius: 2px;
-    background-color: #f2cdcd20;
+    border-radius: 8px;
+    background-color: #f2cdcd10;
     padding: 1rem;
     border: none;
     cursor: pointer;
-    margin-bottom: 1rem;
     text-align: left;
+    display: grid;
+    gap: 0.7rem;
+    border: 1px solid #f2cdcd20;
   }
 
-  h3 {
+  h4 {
     font-size: var(--fs-lg);
   }
 

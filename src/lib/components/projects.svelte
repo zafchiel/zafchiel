@@ -20,7 +20,7 @@
       <ProjectCard {project} />
     {/each}
   </div>
-  <p><i>Working on more, stay tuned!</i></p>
+  <p class="more_projects"><i>Working on more, stay tuned!</i></p>
 </section>
 
 <style>
@@ -29,5 +29,15 @@
     overflow: hidden;
     padding: 1rem;
     background: url("../assets/dot.svg");
+  }
+
+  .display_projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .more_projects {
+    margin-top: 1rem;
   }
 </style>
