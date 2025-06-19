@@ -38,15 +38,36 @@
 
 <style>
   button {
+    position: relative;
     border-radius: 8px;
-    background-color: #f2cdcd10;
+    background-color: #31324418;
+    backdrop-filter: blur(1.25px);
     padding: 1rem;
-    border: none;
     cursor: pointer;
     text-align: left;
     display: grid;
     gap: 0.7rem;
-    border: 1px solid #f2cdcd20;
+    /* border: 1px solid #f2cdcd20; */
+    transition: background-color 150ms ease-in-out;
+    border: none;
+
+    &:hover {
+      background-color: #31324481;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border-radius: inherit;
+      border: 1px solid transparent;
+      background: linear-gradient(to left, #f2cdcd20, #f2cdcd50) border-box;
+      mask:
+        linear-gradient(black, black) border-box,
+        linear-gradient(black, black) padding-box;
+      mask-composite: subtract;
+    }
   }
 
   h4 {
